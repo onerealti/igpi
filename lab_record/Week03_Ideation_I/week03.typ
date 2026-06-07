@@ -1,5 +1,5 @@
 #import "../../template.typ": section, sub-section
-#import "@preview/fletcher:0.5.2" as fletcher: diagram, node, edge
+#import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 
 = Week 03: Ideation Techniques I – Brainstorming & SCAMPER
 
