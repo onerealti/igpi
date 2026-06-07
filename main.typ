@@ -1,6 +1,6 @@
 #import "template.typ": primary-color, secondary-color
 
-#set document(title: "Idea Generation and Product Innovation Lab Record", author: "[Your Name]")
+#set document(title: "Idea Generation and Product Innovation Lab Record", author: "Murtaza Ahmed")
 
 #set page(
   paper: "a4",
@@ -64,8 +64,8 @@
     row-gutter: 15pt,
     align: left,
     [#text(weight: "bold")[Academic Year:]], [2025 - 2026],
-    [#text(weight: "bold")[Student Name:]], [[Your Name]],
-    [#text(weight: "bold")[Roll Number:]], [[Your Roll Number]],
+    [#text(weight: "bold")[Student Name:]], [Murtaza Ahmed],
+    [#text(weight: "bold")[Roll Number:]], [1607-24-736-XXX],
     [#text(weight: "bold")[Semester:]], [B.E - IV Semester]
   )
   
@@ -85,7 +85,7 @@
 ]
 #v(1.5cm)
 #text(size: 12pt)[
-  This is to certify that the laboratory work for the *Idea Generation and Product Innovation Laboratory (PC453ME)* has been successfully completed by *[Your Name]*, bearing Roll Number *[Your Roll Number]* of *B.E – IV Semester of Mechanical Engineering Department*, during the academic year *2025-2026*.
+  This is to certify that the laboratory work for the *Idea Generation and Product Innovation Laboratory (PC453ME)* has been successfully completed by *Murtaza Ahmed*, bearing Roll Number *1607-24-736-XXX* of *B.E – IV Semester of Mechanical Engineering Department*, during the academic year *2025-2026*.
 ]
 
 #v(4cm)
