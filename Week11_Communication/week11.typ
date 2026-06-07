@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Validation")
-= Week 11: Communication & Documentation
+#week-title("Week 11", "Communication & Documentation", "Validation")
 
 #section("Aim")[
   To prepare professional engineering documentation including a technical report, an assembly manual, a presentation poster, and a product pitch summary.

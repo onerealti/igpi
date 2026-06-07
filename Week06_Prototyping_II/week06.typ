@@ -1,8 +1,7 @@
-#import "../template.typ": section, sub-section, primary-color, secondary-color, phase-badge
+#import "../template.typ": section, sub-section, primary-color, secondary-color, week-title
 #import "@preview/cetz:0.5.2"
 
-#phase-badge("Prototype")
-= Week 06: Prototyping II – CAD Modeling
+#week-title("Week 06", "Prototyping II – CAD Modeling", "Prototype")
 
 #section("Aim")[
   To create parametric 3D CAD models of the tracking system components and assemble them digitally to verify fits and clearance angles.

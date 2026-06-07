@@ -1,8 +1,7 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 
-#phase-badge("Ideate")
-= Week 03: Ideation Techniques I – Brainstorming & SCAMPER
+#week-title("Week 03", "Ideation Techniques I – Brainstorming & SCAMPER", "Ideate")
 
 #section("Aim")[
   To generate a wide range of innovative concepts for the solar tracking mechanism using brainstorming and SCAMPER techniques.

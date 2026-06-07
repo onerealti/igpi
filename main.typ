@@ -37,35 +37,38 @@
 )
 
 #set text(
-  font: "Arial",
+  font: "Georgia",
   size: 10.5pt,
   fill: rgb("1f2937"),
   spacing: 120%
 )
 
+#show heading: set text(font: "Arial")
+
 #set par(
   justify: true,
-  leading: 0.75em
+  leading: 0.7em,
+  spacing: 1.2em
 )
 
 // Heading Styles
 #show heading.where(level: 1): it => {
-  set text(size: 16pt, weight: "bold", fill: primary-color)
-  block(width: 100%, below: 1.5em, above: 1.5em)[
+  set text(size: 15pt, weight: "bold", fill: primary-color)
+  block(width: 100%, below: 1.2em, above: 1.5em)[
     #it
-    #v(0.2em)
+    #v(0.3em)
     #line(length: 100%, stroke: 1.5pt + primary-color)
   ]
 }
 
 #show heading.where(level: 2): it => {
-  set text(size: 12.5pt, weight: "bold", fill: primary-color.lighten(15%))
+  set text(size: 12pt, weight: "bold", fill: primary-color.lighten(15%))
   block(width: 100%, below: 0.8em, above: 1.2em)[#it]
 }
 
 #show heading.where(level: 3): it => {
-  set text(size: 11pt, weight: "semibold", fill: secondary-color)
-  block(width: 100%, below: 0.6em, above: 1em)[#it]
+  set text(size: 10.5pt, weight: "semibold", fill: secondary-color)
+  block(width: 100%, below: 0.6em, above: 1.0em)[#it]
 }
 
 // Table defaults

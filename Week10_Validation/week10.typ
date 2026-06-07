@@ -1,8 +1,7 @@
-#import "../template.typ": section, sub-section, formula-block, phase-badge
+#import "../template.typ": section, sub-section, formula-block, week-title
 #import "@preview/cetz:0.5.2"
 
-#phase-badge("Validation")
-= Week 10: Engineering Validation
+#week-title("Week 10", "Engineering Validation", "Validation")
 
 #section("Aim")[
   To validate the structural safety, motor torque requirements, and manufacturability of the tracking mechanism using analytical calculations and DFMA checklist.

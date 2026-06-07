@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Validation")
-= Week 12: Pitching and Final Preparation
+#week-title("Week 12", "Pitching and Final Preparation", "Validation")
 
 #section("Aim")[
   To prepare and polish the slide deck presentation and run mock demonstrations under simulated examiner environments to gather feedback from industry mentors.

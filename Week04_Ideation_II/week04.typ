@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Ideate")
-= Week 04: Ideation Techniques II – Concept Selection
+#week-title("Week 04", "Ideation Techniques II – Concept Selection", "Ideate")
 
 #section("Aim")[
   To systematically evaluate, compare, and select the optimal mechanical configuration for the dual-axis solar tracking system.

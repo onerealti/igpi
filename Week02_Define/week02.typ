@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Define")
-= Week 02: Define Phase – POV & Problem Statement
+#week-title("Week 02", "Define Phase – POV & Problem Statement", "Define")
 
 #section("Aim")[
   To identify user-centered problems and convert them into clear, actionable opportunity statements.

@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Validation")
-= Week 13: Final Presentation & Demo Day
+#week-title("Week 13", "Final Presentation & Demo Day", "Validation")
 
 #section("Aim")[
   To showcase the completed dual-axis solar tracking prototype on Demo Day, complete the oral viva voce exam, and submit final reflections.

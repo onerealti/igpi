@@ -1,9 +1,8 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 #import fletcher.shapes: diamond
 
-#phase-badge("Prototype")
-= Week 05: Prototyping I – Low Fidelity & Storyboard
+#week-title("Week 05", "Prototyping I – Low Fidelity & Storyboard", "Prototype")
 
 #section("Aim")[
   To build a low-fidelity physical prototype, storyboard user scenarios, and chart the system's operational logic flow.

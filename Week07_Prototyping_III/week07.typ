@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Prototype")
-= Week 07: Prototyping III – 3D Printing & Fabrication
+#week-title("Week 07", "Prototyping III – 3D Printing & Fabrication", "Prototype")
 
 #section("Aim")[
   To fabricate functional parts, assemble the physical tracking mechanism, and integrate the servo motors and Arduino board.

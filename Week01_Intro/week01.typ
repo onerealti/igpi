@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Empathize")
-= Week 01: Introduction & Identifying the Need
+#week-title("Week 01", "Introduction & Identifying the Need", "Empathize")
 
 #section("Aim")[
   To introduce the design thinking process, empathize with target users, and perform research on solar panel configurations to identify the engineering need for a dual-axis solar tracking system.

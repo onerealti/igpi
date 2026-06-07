@@ -1,7 +1,6 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 
-#phase-badge("Iteration")
-= Week 09: Iteration & Redesign
+#week-title("Week 09", "Iteration & Redesign", "Iteration")
 
 #section("Aim")[
   To implement mechanical, electrical, and software changes on the tracking prototype to resolve issues found during testing.

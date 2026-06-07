@@ -111,3 +111,24 @@
   )
   v(0.8em)
 }
+
+// Styled Week Title Header Card (suppresses heading line locally, formats badge/title side-by-side, draws clean full-width divider line)
+#let week-title(week-num, title, phase) = {
+  v(0.5em)
+  block(width: 100%)[
+    #show heading.where(level: 1): it => {
+      set text(size: 15pt, weight: "bold", fill: primary-color)
+      it
+    }
+    #grid(
+      columns: (1fr, auto),
+      column-gutter: 12pt,
+      align: (left + bottom, right + bottom),
+      heading(level: 1, outlined: true)[#week-num: #title],
+      phase-badge(phase)
+    )
+    #v(0.4em)
+    #line(length: 100%, stroke: 1.5pt + primary-color)
+  ]
+  v(1.2em)
+}

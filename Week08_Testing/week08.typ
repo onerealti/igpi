@@ -1,8 +1,7 @@
-#import "../template.typ": section, sub-section, phase-badge
+#import "../template.typ": section, sub-section, week-title
 #import "@preview/cetz:0.5.2"
 
-#phase-badge("Testing")
-= Week 08: Testing Phase – Usability & Performance
+#week-title("Week 08", "Testing Phase – Usability & Performance", "Testing")
 
 #section("Aim")[
   To test the prototype's tracking sensitivity, alignment accuracy, power draw, and mechanical failure points.
