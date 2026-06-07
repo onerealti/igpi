@@ -147,6 +147,6 @@ Navigate to the root directory `lab_record` in your terminal and run:
 
 ## 👤 Author Information
 * **Name:** Murtaza Ahmed
-* **Roll Number:** `1607-24-736-XXX` *(Replace with actual roll number if compiling for submission)*
+* **Roll Number:** `1607-24-736-017`
 * **Department:** Department of Mechanical Engineering
 * **College:** Muffakham College of Engineering and Technology (MCET)
