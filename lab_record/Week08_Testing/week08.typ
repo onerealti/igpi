@@ -23,7 +23,7 @@
   - *Power Consumption:*
     - _Idle (No motor movement):_ 45mA @ 5V (0.225W).
     - _Active (Both servos moving):_ 450mA @ 5V (2.25W).
-    - _Net Gain:_ Tested with a 20W panel. Daily generation increased by 32% (an average gain of 6.4W), while average motor draw was under 0.5W. **Net energy gain is positive.**
+    - _Net Gain:_ Tested with a 20W panel. Daily generation increased by 32% (an average gain of 6.4W), while average motor draw was under 0.5W. *Net energy gain is positive.*
 
   === 2. Failure Analysis (FMEA)
   

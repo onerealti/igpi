@@ -10,8 +10,8 @@
     if page-num > 2 {
       grid(
         columns: (1fr, 1fr),
-        align(left)[#text(8pt, fill: gray.darken(20%), font: "sans-serif")[Idea Generation & Product Innovation Lab (PC453ME)]],
-        align(right)[#text(8pt, fill: gray.darken(20%), font: "sans-serif")[Mechanical Engineering Dept, MCET]]
+        align(left)[#text(8pt, fill: gray.darken(20%), font: "Arial")[Idea Generation & Product Innovation Lab (PC453ME)]],
+        align(right)[#text(8pt, fill: gray.darken(20%), font: "Arial")[Mechanical Engineering Dept, MCET]]
       )
       v(-4pt)
       line(length: 100%, stroke: 0.5pt + gray)
@@ -20,13 +20,13 @@
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 1 {
-      align(center)[#text(9pt, fill: gray.darken(20%), font: "sans-serif")[#page-num]]
+      align(center)[#text(9pt, fill: gray.darken(20%), font: "Arial")[#page-num]]
     }
   }
 )
 
 #set text(
-  font: "sans-serif",
+  font: "Arial",
   size: 11pt,
   fill: rgb("1f2937"),
   spacing: 120%
