@@ -4,19 +4,19 @@
 
 #set page(
   paper: "a4",
-  margin: (x: 2.5cm, top: 3.0cm, bottom: 2.5cm),
+  margin: (left: 3.0cm, right: 2.5cm, top: 3.0cm, bottom: 2.5cm),
   header: context {
     let page-num = counter(page).get().first()
     if page-num > 2 {
       let headings = query(selector(heading.where(level: 1)).before(here()))
-      let current-week = if headings.len() > 0 {
+      let current-title = if headings.len() > 0 {
         headings.last().body
       } else {
         "Idea Generation & Product Innovation"
       }
       grid(
         columns: (1fr, auto),
-        align(left)[#text(8.5pt, fill: primary-color, weight: "bold", font: "Arial")[#current-week]],
+        align(left)[#text(8.5pt, fill: primary-color, weight: "bold", font: "Arial")[#current-title]],
         align(right)[#text(8.5pt, fill: gray.darken(35%), font: "Arial")[MCET | Department of Mechanical Engineering]]
       )
       v(-4pt)
@@ -38,7 +38,7 @@
 
 #set text(
   font: "Georgia",
-  size: 10.5pt,
+  size: 10pt,
   fill: rgb("1f2937"),
   spacing: 120%
 )
@@ -53,7 +53,7 @@
 
 // Heading Styles
 #show heading.where(level: 1): it => {
-  set text(size: 15pt, weight: "bold", fill: primary-color)
+  set text(size: 14pt, weight: "bold", fill: primary-color)
   block(width: 100%, below: 1.2em, above: 1.5em)[
     #it
     #v(0.3em)
@@ -62,12 +62,12 @@
 }
 
 #show heading.where(level: 2): it => {
-  set text(size: 12pt, weight: "bold", fill: primary-color.lighten(15%))
+  set text(size: 11.5pt, weight: "bold", fill: primary-color.lighten(15%))
   block(width: 100%, below: 0.8em, above: 1.2em)[#it]
 }
 
 #show heading.where(level: 3): it => {
-  set text(size: 10.5pt, weight: "semibold", fill: secondary-color)
+  set text(size: 10pt, weight: "semibold", fill: secondary-color)
   block(width: 100%, below: 0.6em, above: 1.0em)[#it]
 }
 
@@ -95,20 +95,46 @@
   strong(it)
 }
 
+// Code Block Custom Styling
+#show raw.where(block: true): it => {
+  block(
+    width: 100%,
+    fill: rgb("f8fafc"),
+    stroke: (left: 3pt + primary-color, rest: 0.5pt + rgb("cbd5e1")),
+    inset: (x: 12pt, y: 10pt),
+    radius: (right: 4pt),
+    [
+      #set text(font: "Consolas", size: 8.5pt)
+      #it
+    ]
+  )
+}
+
 // ==========================================
 // COVER PAGE
 // ==========================================
-#place(left, dx: -1.5cm,
-  line(start: (0cm, -10%), end: (0cm, 90%), stroke: 5pt + primary-color)
+#place(top + left, dx: -2.0cm, dy: -2.2cm,
+  rect(
+    width: 19.0cm,
+    height: 27.2cm,
+    stroke: 1.5pt + primary-color
+  )
+)
+#place(top + left, dx: -1.9cm, dy: -2.1cm,
+  rect(
+    width: 18.8cm,
+    height: 27.0cm,
+    stroke: 0.5pt + primary-color
+  )
 )
 
 #align(center)[
-  #v(1cm)
-  #text(20pt, weight: "bold", fill: primary-color)[MUFFAKHAM COLLEGE OF ENGINEERING AND TECHNOLOGY] \
-  #text(11pt, weight: "bold", fill: secondary-color)[(Affiliated to Osmania University & Approved by AICTE)] \
-  #text(12pt, weight: "medium", fill: secondary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
+  #v(0.8cm)
+  #text(18pt, weight: "bold", fill: primary-color)[MUFFAKHAM COLLEGE OF ENGINEERING AND TECHNOLOGY] \
+  #text(10pt, weight: "bold", fill: secondary-color)[(Affiliated to Osmania University & Approved by AICTE)] \
+  #text(11pt, weight: "medium", fill: secondary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
   
-  #v(2.5cm)
+  #v(2.2cm)
   #rect(
     width: 95%,
     stroke: 1.5pt + primary-color,
@@ -117,17 +143,17 @@
     fill: primary-color.lighten(95%)
   )[
     #align(center)[
-      #text(16pt, weight: "bold", fill: primary-color)[IDEA GENERATION AND PRODUCT INNOVATION\ LABORATORY RECORD] \
-      #v(0.6em)
-      #text(12pt, weight: "bold", fill: secondary-color)[Course Code: PC453ME]
+      #text(15pt, weight: "bold", fill: primary-color)[IDEA GENERATION AND PRODUCT INNOVATION\ LABORATORY RECORD] \
+      #v(0.5em)
+      #text(11pt, weight: "bold", fill: secondary-color)[Course Code: PC453ME]
     ]
   ]
   
-  #v(1.5cm)
-  #text(14pt, weight: "bold", fill: primary-color)[Project: Helio-Track S1] \
-  #text(12pt, style: "italic", fill: secondary-color)[Dual-Axis Solar Tracking System]
+  #v(1.2cm)
+  #text(13pt, weight: "bold", fill: primary-color)[Project: Helio-Track S1] \
+  #text(11pt, style: "italic", fill: secondary-color)[Dual-Axis Solar Tracking System]
   
-  #v(3.0cm)
+  #v(2.8cm)
   #block(
     width: 85%,
     stroke: 0.75pt + gray.lighten(40%),
@@ -147,58 +173,63 @@
     )
   ]
   
-  #v(2.5cm)
+  #v(2.6cm)
   #line(length: 40%, stroke: 1.5pt + primary-color)
-  #v(0.5cm)
-  #text(9.5pt, style: "italic", fill: gray.darken(30%))[Submitted in partial fulfillment of the requirements for the degree of Bachelor of Engineering in Mechanical Engineering]
+  #v(0.4cm)
+  #text(9pt, style: "italic", fill: gray.darken(30%))[Submitted in partial fulfillment of the requirements for the degree of Bachelor of Engineering in Mechanical Engineering]
 ]
 
 // ==========================================
 // CERTIFICATE PAGE
 // ==========================================
 #pagebreak()
-#v(1.0cm)
-#rect(
-  width: 100%,
-  height: 95%,
-  stroke: 1.5pt + primary-color,
-  inset: 25pt,
-  radius: 6pt,
-  fill: rgb("fcfdfd")
-)[
-  #v(0.5cm)
-  #align(center)[
-    #text(20pt, weight: "bold", fill: primary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
-    #text(12pt, weight: "bold", fill: secondary-color)[MUFFAKHAM COLLEGE OF ENGINEERING & TECHNOLOGY] \
-    #v(1cm)
-    #text(16pt, weight: "bold", fill: primary-color)[CERTIFICATE] \
-    #v(0.5cm)
-    #line(length: 30%, stroke: 1.5pt + primary-color)
-  ]
-  #v(2.0cm)
-  #set par(leading: 1.1em, justify: true)
-  #text(size: 11.5pt)[
-    This is to certify that the laboratory work for the *Idea Generation and Product Innovation Laboratory (PC453ME)* has been successfully completed by *Murtaza Ahmed*, bearing Roll Number *1607-24-736-017* of *B.E – IV Semester of Mechanical Engineering Department*, during the academic year *2025-2026*.
-    
-    #v(0.8em)
-    The student has successfully developed and demonstrated the *Helio-Track S1: Dual-Axis Solar Tracking System* project under the guidance of the faculty members in partial fulfillment of academic requirements.
-  ]
-  
-  #v(4.5cm)
-  #grid(
-    columns: (1fr, 1fr),
-    align(left)[
-      #line(length: 65%, stroke: 0.75pt + black)
-      #v(0.2em)
-      #text(weight: "bold", size: 10pt)[Faculty Signature]
-    ],
-    align(right)[
-      #line(length: 65%, stroke: 0.75pt + black)
-      #v(0.2em)
-      #text(weight: "bold", size: 10pt)[HOD Signature]
-    ]
+#place(top + left, dx: -2.0cm, dy: -2.2cm,
+  rect(
+    width: 19.0cm,
+    height: 27.2cm,
+    stroke: 1.5pt + primary-color
   )
+)
+#place(top + left, dx: -1.9cm, dy: -2.1cm,
+  rect(
+    width: 18.8cm,
+    height: 27.0cm,
+    stroke: 0.5pt + primary-color
+  )
+)
+
+#v(0.5cm)
+#align(center)[
+  #text(18pt, weight: "bold", fill: primary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
+  #text(11pt, weight: "bold", fill: secondary-color)[MUFFAKHAM COLLEGE OF ENGINEERING & TECHNOLOGY] \
+  #v(1cm)
+  #text(15pt, weight: "bold", fill: primary-color)[CERTIFICATE] \
+  #v(0.5cm)
+  #line(length: 30%, stroke: 1.5pt + primary-color)
 ]
+#v(2.0cm)
+#set par(leading: 1.1em, justify: true)
+#text(size: 11pt)[
+  This is to certify that the laboratory work for the *Idea Generation and Product Innovation Laboratory (PC453ME)* has been successfully completed by *Murtaza Ahmed*, bearing Roll Number *1607-24-736-017* of *B.E – IV Semester of Mechanical Engineering Department*, during the academic year *2025-2026*.
+  
+  #v(0.8em)
+  The student has successfully developed and demonstrated the *Helio-Track S1: Dual-Axis Solar Tracking System* project under the guidance of the faculty members in partial fulfillment of academic requirements.
+]
+
+#v(4.5cm)
+#grid(
+  columns: (1fr, 1fr),
+  align(left)[
+    #line(length: 65%, stroke: 0.75pt + black)
+    #v(0.2em)
+    #text(weight: "bold", size: 10pt)[Faculty Signature]
+  ],
+  align(right)[
+    #line(length: 65%, stroke: 0.75pt + black)
+    #v(0.2em)
+    #text(weight: "bold", size: 10pt)[HOD Signature]
+  ]
+)
 
 // ==========================================
 // TABLE OF CONTENTS (INDEX)

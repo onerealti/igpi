@@ -1,21 +1,22 @@
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 #import "@preview/cetz:0.5.2"
 
-// Global Color Palette
-#let primary-color = rgb("1f3b68")    // Navy Blue
-#let secondary-color = rgb("1f2937")  // Dark Slate
-#let accent-color = rgb("2e7d32")     // Forest Green
+// Global Overhauled Color Palette
+#let primary-color = rgb("1e3a8a")    // Deep Royal Blue
+#let secondary-color = rgb("334155")  // Slate Gray
+#let accent-color = rgb("15803d")     // Forest Green
 
-// Color-coded section style function (Scientific Academic Header Layout)
+// Clean Textbook-Style Section Header
 #let section(title, content) = {
   block(
     width: 100%,
-    below: 1.2em,
-    above: 1.2em,
+    below: 1.5em,
+    above: 1.5em,
+    breakable: true,
     [
-      #text(11pt, weight: "bold", fill: black)[#upper(title)]
+      #text(10pt, weight: "bold", fill: primary-color, font: "Arial", tracking: 1pt)[#upper(title)]
       #v(0.2em)
-      #line(length: 100%, stroke: 0.75pt + black)
+      #line(length: 100%, stroke: 0.75pt + primary-color.lighten(50%))
       #v(0.4em)
       #content
     ]
@@ -26,52 +27,51 @@
 #let sub-section(title, content) = {
   block(
     width: 100%,
-    below: 0.8em,
-    above: 1.0em,
+    below: 1.0em,
+    above: 1.2em,
+    breakable: true,
     [
-      #text(10.5pt, weight: "bold", fill: black)[#title]
+      #text(10pt, weight: "bold", fill: secondary-color, font: "Arial")[#title]
       #v(0.2em)
       #content
     ]
   )
 }
 
-// Design Thinking Phase Badge (Simple italic text in subtitle)
+// Design Thinking Phase Subtitle
 #let phase-badge(phase) = {
-  text(9.5pt, style: "italic", fill: gray.darken(30%))[Design Thinking Phase: #phase]
+  text(9.5pt, style: "italic", fill: primary-color.lighten(30%))[Design Thinking Phase: #phase]
 }
 
-// Styled Formula Block Card (Centered textbook equations)
+// Styled Formula Block (Centered textbook equations with descriptors)
 #let formula-block(eq, caption: none) = {
   align(center)[
     #block(width: 90%)[
       #eq
       #if caption != none [
-        #v(0.2em)
+        #v(0.3em)
         #text(8.5pt, style: "italic", fill: gray.darken(35%))[#caption]
       ]
     ]
   ]
-  v(0.8em)
+  v(1.0em)
 }
 
 // Styled Week Title Header Card (Traditional academic week header)
 #let week-title(week-num, title, phase) = {
-  v(0.5em)
+  v(1.0cm)
   block(width: 100%)[
     #show heading.where(level: 1): it => {
-      set text(size: 15pt, weight: "bold", fill: primary-color)
+      set text(size: 15pt, weight: "bold", fill: primary-color, font: "Arial")
       it
     }
-    #grid(
-      columns: (1fr, auto),
-      column-gutter: 12pt,
-      align: (left + bottom, right + bottom),
-      heading(level: 1, outlined: true)[#week-num: #title],
-      phase-badge(phase)
-    )
+    #text(9pt, weight: "bold", fill: gray.darken(30%), tracking: 1.5pt, font: "Arial")[#upper(week-num)] \
+    #v(0.2em)
+    #heading(level: 1, outlined: true)[#title] \
     #v(0.4em)
+    #phase-badge(phase)
+    #v(0.5em)
     #line(length: 100%, stroke: 1.5pt + primary-color)
   ]
-  v(1.2em)
+  v(1.5em)
 }
