@@ -18,7 +18,7 @@
       #content
     ]
   )
-  #v(0.8em)
+  v(0.8em)
 }
 
 #let sub-section(title, content) = {
@@ -31,5 +31,5 @@
       #content
     ]
   )
-  #v(0.5em)
+  v(0.5em)
 }
