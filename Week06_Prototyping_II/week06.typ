@@ -1,4 +1,5 @@
 #import "../template.typ": section, sub-section
+#import "@preview/cetz:0.5.2"
 
 = Week 06: Prototyping II – CAD Modeling
 
@@ -15,6 +16,7 @@
   - 3D Features (Extrude, Revolve, Shell, Cut)
   - Concentric and Coincident Assembly Mating
   - Joint Angular Limits
+  - 2D Engineering Assembly Layouts
 ]
 
 #section("Theory")[
@@ -49,11 +51,73 @@
   - *Coincident:* Placed the base of the Pillar flush against the Base Plate thrust bearing surface.
   - *Limit Angle:* Constrained the Elevation rotation to between 0° (horizontal) and 90° (vertical) to prevent the panel holder from colliding with the pillar.
   - *Distance:* Maintained a minimum 5mm gap between the panel and the Elevation servo body to avoid wire pinch.
+
+  === 4. 2D Assembly Layout Schematic (CAD View)
+  The layout below represents the assembled tracking unit with mechanical connections and components labeled:
+  
+  #v(0.5em)
+  #align(center)[
+    #cetz.canvas({
+      import cetz.draw: *
+      
+      // Draw Base Box
+      rect((-1.8, 0.0), (1.8, 0.5), fill: rgb("f8fafc"), stroke: 1.2pt + primary-color)
+      content((0.0, 0.25), [Base Housing (PLA)], frame: "none")
+      
+      // Draw Azimuth Servo Box inside Base
+      rect((-0.4, 0.5), (0.4, 0.8), fill: rgb("e2e8f0"), stroke: 0.8pt + black)
+      content((0.0, 0.65), [Azimuth Servo], size: 7.5pt)
+      
+      // Thrust Bearing line
+      line((-0.6, 0.82), (0.6, 0.82), stroke: 1.5pt + gray)
+      
+      // Draw Pillar
+      rect((-0.3, 0.84), (0.3, 2.8), fill: rgb("f1f5f9"), stroke: 1.2pt + primary-color)
+      content((0.0, 1.82), [Main Pillar (PLA)], rotate: 90deg, size: 9pt)
+      
+      // Draw Elevation Servo Box at top of Pillar
+      rect((-0.35, 2.8), (0.35, 3.2), fill: rgb("e2e8f0"), stroke: 0.8pt + black)
+      content((0.0, 3.0), [Elevation Servo], size: 7.5pt)
+      
+      // Elevation Pivot Circle
+      circle((0.0, 3.2), radius: 0.15, fill: primary-color)
+      
+      // Draw Panel Mount and Panel (Tilted at 40 degrees)
+      group({
+        rotate(40deg)
+        line((-1.5, 3.2), (1.5, 3.2), stroke: 4pt + primary-color) // solar panel
+        content((0.0, 3.4), [Solar Panel & Holder (PETG)], size: 9pt)
+        
+        // Sensor Cross on top of panel
+        rect((-0.2, 3.2), (0.2, 3.7), fill: rgb("cbd5e1"), stroke: 0.8pt + black)
+        content((0.0, 3.45), [LDR Array], size: 7pt)
+      })
+      
+      // Add Callout arrows
+      // Callout 1: Solar Panel
+      line((1.5, 4.0), (0.8, 3.6), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((1.8, 4.1), [Solar Panel (10W)], size: 8pt)
+      
+      // Callout 2: LDR Sensor Shroud
+      line((-1.2, 4.2), (-0.2, 3.8), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((-1.5, 4.3), [LDR Shroud & Array], size: 8pt)
+      
+      // Callout 3: Main Pillar
+      line((-1.4, 2.0), (-0.35, 1.9), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((-1.8, 2.0), [Vertical Pillar (PLA)], size: 8pt)
+      
+      // Callout 4: Thrust Bearing
+      line((1.4, 1.1), (0.5, 0.83), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((1.8, 1.2), [Thrust Bearing], size: 8pt)
+    })
+  ]
+  #v(0.5em)
 ]
 
 #section("Deliverables")[
   - Assembly drawings and clearance constraints.
   - Materials and CAD parts list.
+  - 2D CAD Assembly Layout schematic (CeTZ Canvas).
 ]
 
 #section("Outcome")[

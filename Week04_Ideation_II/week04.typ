@@ -48,12 +48,33 @@
   === 3. Selected Concept Refinements
   - *Thrust Bearing:* Added a flat thrust bearing to the central pillar base to transfer structural weight away from the Azimuth servo shaft.
   - *Cable Channel:* Designed an internal hollow routing path through the pillar to manage wiring and prevent twisting.
+
+  === 4. Bill of Materials (BOM)
+  The following table lists the components required to fabricate the selected Direct Servo configuration:
+  
+  #align(center)[
+    #table(
+      columns: (1fr, 3fr, 1fr, 1.5fr, 1.5fr),
+      inset: 6pt,
+      align: (center, left, center, right, right),
+      [*S.No.*], [*Component Description*], [*Qty*], [*Unit Cost (INR)*], [*Total Cost (INR)*],
+      [1], [Arduino Nano (ATmega328P)], [1], [350.00], [350.00],
+      [2], [MG995 High-Torque Servo Motor], [2], [420.00], [840.00],
+      [3], [Light Dependent Resistors (LDRs)], [4], [15.00], [60.00],
+      [4], [10k Ohm Resistors & Breadboard Wires], [1 set], [120.00], [120.00],
+      [5], [PLA/PETG Filament (printed parts, ~400g)], [1 roll], [850.00], [850.00],
+      [6], [M3 Socket-Head Screw Set & Nuts], [1 set], [150.00], [150.00],
+      [7], [Miniature Ball Thrust Bearing (F8-16M)], [1], [180.00], [180.00],
+      [*Total*], [*Estimated Material Cost*], [*11*], [*-*], [*INR 2,550.00*]
+    )
+  ]
 ]
 
 #section("Deliverables")[
   - Weighted concept selection matrix.
   - Feasibility vs. innovation analysis.
   - Justification of selected configuration.
+  - Detailed Bill of Materials (BOM) and cost estimate.
 ]
 
 #section("Outcome")[

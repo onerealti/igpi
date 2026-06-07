@@ -44,12 +44,111 @@
   - *The Solution:* The Helio-Track S1 is a 3D-printable, low-cost (\$50) dual-axis tracking mount that automatically tracks the sun.
   - *The Value:* Boosts daily energy generation by over 30%, uses common, easily sourced components that can be printed and repaired anywhere, and automatically sleeps at night to save power.
   - *Closing:* *"Why settle for 60% of your power when you can have 100%? The Helio-Track S1: Making every ray count."*
+
+  === 5. Arduino Nano Control Sketch (C++ Source)
+  The physical prototype uses the following non-blocking control loop written in C++ for the Arduino IDE:
+  
+  ```cpp
+  #include <Servo.h>
+
+  // Servo pin definitions
+  const int pinAzimuthServo = 9;
+  const int pinElevationServo = 10;
+
+  // LDR sensor pin definitions (A0-A3)
+  // TL = Top-Left, TR = Top-Right, BL = Bottom-Left, BR = Bottom-Right
+  const int pinLdrTL = A0;
+  const int pinLdrTR = A1;
+  const int pinLdrBL = A2;
+  const int pinLdrBR = A3;
+
+  // Servo objects
+  Servo servoAzimuth;
+  Servo servoElevation;
+
+  // Current angles
+  int angleAzimuth = 90;
+  int angleElevation = 45;
+
+  // Safety and tracking parameters
+  const int threshold = 20;     // Hysteresis deadband to prevent hunting/jitter
+  const int delayTime = 50;      // Loop step delay (ms)
+  const int nightLimit = 100;    // Threshold below which it goes to standby
+
+  void setup() {
+    servoAzimuth.attach(pinAzimuthServo);
+    servoElevation.attach(pinElevationServo);
+    
+    // Initialize to starting positions
+    servoAzimuth.write(angleAzimuth);
+    servoElevation.write(angleElevation);
+    delay(1000);
+  }
+
+  void loop() {
+    // Read analog values from LDR quadrants
+    int valTL = analogRead(pinLdrTL);
+    int valTR = analogRead(pinLdrTR);
+    int valBL = analogRead(pinLdrBL);
+    int valBR = analogRead(pinLdrBR);
+    
+    // Calculate average light levels
+    int avgTop = (valTL + valTR) / 2;
+    int avgBottom = (valBL + valBR) / 2;
+    int avgLeft = (valTL + valBL) / 2;
+    int avgRight = (valTR + valBR) / 2;
+    
+    int totalLight = (avgTop + avgBottom) / 2;
+    
+    // Check if it is nighttime
+    if (totalLight < nightLimit) {
+      // Return to eastern orientation for sunrise
+      if (angleAzimuth != 10) {
+        angleAzimuth = 10;
+        servoAzimuth.write(angleAzimuth);
+      }
+      if (angleElevation != 15) {
+        angleElevation = 15;
+        servoElevation.write(angleElevation);
+      }
+      delay(5000); // Check less frequently in standby
+      return;
+    }
+    
+    // Calculate difference errors
+    int errorElevation = avgTop - avgBottom;
+    int errorAzimuth = avgLeft - avgRight;
+    
+    // Adjust Elevation Servo (Vertical axis)
+    if (abs(errorElevation) > threshold) {
+      if (errorElevation > 0 && angleElevation < 90) {
+        angleElevation++;
+      } else if (errorElevation < 0 && angleElevation > 15) {
+        angleElevation--;
+      }
+      servoElevation.write(angleElevation);
+    }
+    
+    // Adjust Azimuth Servo (Horizontal axis)
+    if (abs(errorAzimuth) > threshold) {
+      if (errorAzimuth > 0 && angleAzimuth < 170) {
+        angleAzimuth++;
+      } else if (errorAzimuth < 0 && angleAzimuth > 10) {
+        angleAzimuth--;
+      }
+      servoAzimuth.write(angleAzimuth);
+    }
+    
+    delay(delayTime);
+  }
+  ```
 ]
 
 #section("Deliverables")[
   - Technical design report outline.
   - User assembly and operations manual.
-  - Pitch deck script.
+  - Pitch deck script and presentation poster layout.
+  - Complete Arduino C++ control sketch source code.
 ]
 
 #section("Outcome")[
