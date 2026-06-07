@@ -67,7 +67,7 @@
             gutter: 6pt,
             align: center + horizon,
             text(11pt)[#icon],
-            text(9.5pt, weight: "bold", fill: border-color.darken(10%), tracking: 0.5pt)[#title.upper()]
+            text(9.5pt, weight: "bold", fill: border-color.darken(10%), tracking: 0.5pt)[#upper(title)]
           )
         ]
       )
