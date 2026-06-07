@@ -9,77 +9,31 @@
 // Color-coded section style function
 #let section(title, content) = {
   let border-color = primary-color
-  let bg-color = rgb("f8fafc")
-  let icon = "📝"
   
-  if title == "Aim" {
+  if title == "Aim" or title == "Objectives" {
     border-color = rgb("0284c7") // Sky Blue
-    bg-color = rgb("f0f9ff")
-    icon = "🎯"
-  } else if title == "Objectives" {
-    border-color = rgb("0284c7") // Sky Blue
-    bg-color = rgb("f0f9ff")
-    icon = "📋"
   } else if title == "Outcome" {
     border-color = rgb("16a34a") // Forest Green
-    bg-color = rgb("f0fdf4")
-    icon = "✅"
   } else if title == "Theory" {
     border-color = rgb("475569") // Slate Gray
-    bg-color = rgb("f8fafc")
-    icon = "📖"
   } else if title == "Activity" or title == "Activity & Findings" {
     border-color = primary-color // Navy
-    bg-color = rgb("ffffff")
-    icon = "🔬"
-  } else if title == "Deliverables" {
+  } else if title == "Deliverables" or title == "Materials Required" or title == "Topics Covered" {
     border-color = rgb("d97706") // Amber
-    bg-color = rgb("fffbeb")
-    icon = "📦"
-  } else if title == "Materials Required" {
-    border-color = rgb("d97706") // Amber
-    bg-color = rgb("fffbeb")
-    icon = "🛠️"
-  } else if title == "Topics Covered" {
-    border-color = rgb("d97706") // Amber
-    bg-color = rgb("fffbeb")
-    icon = "📚"
   }
   
   block(
     width: 100%,
-    stroke: (left: 4.5pt + border-color, rest: 0.75pt + border-color.lighten(60%)),
-    inset: 0pt,
-    radius: 4pt,
-    fill: bg-color,
-    breakable: true,
+    below: 1.2em,
+    above: 1.2em,
     [
-      // Card Header
-      #block(
-        width: 100%,
-        fill: border-color.lighten(90%),
-        inset: (x: 12pt, y: 7pt),
-        radius: (top-right: 3pt),
-        stroke: (bottom: 0.5pt + border-color.lighten(60%)),
-        [
-          #grid(
-            columns: (auto, 1fr),
-            gutter: 6pt,
-            align: center + horizon,
-            text(11pt)[#icon],
-            text(9.5pt, weight: "bold", fill: border-color.darken(10%), tracking: 0.5pt)[#upper(title)]
-          )
-        ]
-      )
-      // Card Body
-      #block(
-        width: 100%,
-        inset: (x: 12pt, y: 10pt),
-        [#content]
-      )
+      #text(10.5pt, weight: "bold", fill: border-color, tracking: 0.5pt)[#upper(title)]
+      #v(0.2em)
+      #line(length: 100%, stroke: 0.75pt + border-color.lighten(40%))
+      #v(0.4em)
+      #content
     ]
   )
-  v(1.2em)
 }
 
 // Styled Subsections
