@@ -20,7 +20,7 @@
 #section("Activity")[
   === 1. Demo Day Showcase Setup
   We set up our presentation table with:
-  - The fully assembled **Helio-Track S1** prototype.
+  - The fully assembled *Helio-Track S1* prototype.
   - A printed project poster displaying our CAD drawings, testing graphs, and validation calculations.
   - A demonstration rig: We used a high-power LED flashlight to simulate the sun, showing how the solar panel rotated in both axes to lock onto the light beam.
 

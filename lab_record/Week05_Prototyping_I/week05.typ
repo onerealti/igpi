@@ -1,5 +1,6 @@
 #import "../../template.typ": section, sub-section
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
+#import fletcher.shapes: diamond
 
 = Week 05: Prototyping I – Low Fidelity & Storyboard
 
@@ -47,19 +48,19 @@
       edge((0,0), (0,1), "-|>"),
       node((0,1), [Calibration], corner-radius: 4pt),
       edge((0,1), (0,2), "-|>"),
-      node((0,2), [Sunlight?], shape: "diamond", inset: 5pt),
+      node((0,2), [Sunlight?], shape: diamond, inset: 5pt),
       
       edge((0,2), (1.2,2), "-|>", label: [No]),
       node((1.2,2), [Standby Mode], corner-radius: 4pt),
       edge((1.2,2), (1.2,3), "-|>"),
-      node((1.2,3), [Sunrise?], shape: "diamond", inset: 5pt),
+      node((1.2,3), [Sunrise?], shape: diamond, inset: 5pt),
       edge((1.2,3), (0,1), "-|>", label: [Yes], bend: -35deg),
       edge((1.2,3), (1.2,2), "-|>", label: [No], bend: -45deg),
       
       edge((0,2), (0,3), "-|>", label: [Yes]),
       node((0,3), [Read 4 LDRs], corner-radius: 4pt),
       edge((0,3), (0,4), "-|>"),
-      node((0,4), [Diff > Threshold?], shape: "diamond", inset: 3pt),
+      node((0,4), [Diff > Threshold?], shape: diamond, inset: 3pt),
       
       edge((0,4), (-1.2,4), "-|>", label: [Yes]),
       node((-1.2,4), [Adjust Servos], corner-radius: 4pt),
