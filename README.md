@@ -1,10 +1,11 @@
 # ☀️ Helio-Track S1: Dual-Axis Solar Tracking System
 
-[![Typst](https://img.shields.io/badge/Typst-0.11.0%2B-blue?logo=typst&logoColor=white)](https://typst.app)
+[![Typst](https://img.shields.io/badge/Typst-0.14.2-blue?logo=typst&logoColor=white)](https://typst.app)
 [![Hardware](https://img.shields.io/badge/Hardware-Arduino%20Nano-informational?logo=arduino&logoColor=white)](https://arduino.cc)
 [![Mechanical](https://img.shields.io/badge/CAD-SolidWorks-brightgreen)](https://www.solidworks.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Affiliation](https://img.shields.io/badge/College-MJCET-red)](https://mjcollege.ac.in)
+[![CI/CD](https://github.com/onerealti/igpi/actions/workflows/compile.yml/badge.svg)](https://github.com/onerealti/igpi/actions/workflows/compile.yml)
 
 This repository contains the complete laboratory record and design documentation for **Helio-Track S1**, an affordable, 3D-printable dual-axis solar tracking system. Developed as part of the **Idea Generation and Product Innovation Lab (PC453ME)** in the Department of Mechanical Engineering at **Muffakham College of Engineering and Technology (MJCET)**.
 
@@ -142,6 +143,12 @@ Navigate to the root directory `lab_record` in your terminal and run:
 
 > [!NOTE]
 > The compiler will automatically download the correct package versions for `@preview/cetz:0.5.2` and `@preview/fletcher:0.5.8` on the first run. No manual package installation is required.
+
+### 🔄 Automated CI/CD
+
+This repository includes a GitHub Actions CI/CD workflow that:
+* **Validates Builds**: Automatically compiles the Typst source code on every push or pull request to the `main` branch to prevent build breakage.
+* **Publishes Releases**: Automatically creates a GitHub Release with the compiled `main.pdf` attached whenever a version tag (e.g., `v1.0.0`) is pushed.
 
 ---
 
