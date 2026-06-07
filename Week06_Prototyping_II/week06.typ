@@ -1,6 +1,7 @@
-#import "../template.typ": section, sub-section, primary-color, secondary-color
+#import "../template.typ": section, sub-section, primary-color, secondary-color, phase-badge
 #import "@preview/cetz:0.5.2"
 
+#phase-badge("Prototype")
 = Week 06: Prototyping II – CAD Modeling
 
 #section("Aim")[

@@ -1,5 +1,6 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 
+#phase-badge("Iteration")
 = Week 09: Iteration & Redesign
 
 #section("Aim")[

@@ -77,6 +77,9 @@
 // Bullet list spacing
 #set list(indent: 10pt, marker: ([#text(fill: primary-color)[•]], [#text(fill: primary-color)[‣]]))
 
+// Equation numbering
+#set math.equation(numbering: "(1)")
+
 // Outline customization
 #show outline.entry.where(level: 1): it => {
   v(12pt, weak: true)
@@ -272,3 +275,22 @@ Design thinking is a human-centered, iterative problem-solving framework. It con
 #pagebreak(weak: true)
 #include "Week13_Final/week13.typ"
 
+// ==========================================
+// REFERENCES
+// ==========================================
+#pagebreak()
+#v(1cm)
+#align(center)[
+  #text(18pt, weight: "bold", fill: primary-color)[REFERENCES / BIBLIOGRAPHY]
+]
+#v(1cm)
+
+#set list(indent: 15pt)
+#text(size: 10pt)[
+  1. *IEEE Standard for Solar Tracker Testing (IEEE 1547):* Guidelines on engineering safety, power quality, and mechanical tracking validation parameters.
+  2. *Osmania University Laboratory Manual (PC453ME):* Academic guidelines for Idea Generation and Product Innovation Laboratory records.
+  3. *Duffie, J. A., & Beckman, W. A. (2013). Solar Engineering of Thermal Processes:* Classic reference on sun-angle equations, solar geometry (Azimuth and Elevation), and solar irradiance calculation.
+  4. *Arduino Hardware Documentation:* Specifications for the Arduino Nano board, ATmega328P power metrics, and Servo motor pulse-width modulation (PWM) control interfaces.
+  5. *SolidWorks Design Manual:* DFMA practices and tolerance guidelines for FDM 3D printing assemblies and mechanical joints.
+  6. *McEvoy, A., Markvart, T., & Castaner, L. (2012). Practical Photovoltaics:* Efficiency calculations and performance characteristics of static vs. tracking solar arrays under varying atmospheric conditions.
+]

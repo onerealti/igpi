@@ -1,6 +1,7 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 #import "@preview/cetz:0.5.2"
 
+#phase-badge("Testing")
 = Week 08: Testing Phase – Usability & Performance
 
 #section("Aim")[

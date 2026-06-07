@@ -1,5 +1,6 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 
+#phase-badge("Prototype")
 = Week 07: Prototyping III – 3D Printing & Fabrication
 
 #section("Aim")[

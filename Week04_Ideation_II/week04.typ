@@ -1,5 +1,6 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 
+#phase-badge("Ideate")
 = Week 04: Ideation Techniques II – Concept Selection
 
 #section("Aim")[

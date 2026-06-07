@@ -1,5 +1,6 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 
+#phase-badge("Define")
 = Week 02: Define Phase – POV & Problem Statement
 
 #section("Aim")[

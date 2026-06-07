@@ -1,5 +1,6 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 
+#phase-badge("Validation")
 = Week 11: Communication & Documentation
 
 #section("Aim")[

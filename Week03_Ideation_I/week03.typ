@@ -1,6 +1,7 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 
+#phase-badge("Ideate")
 = Week 03: Ideation Techniques I – Brainstorming & SCAMPER
 
 #section("Aim")[

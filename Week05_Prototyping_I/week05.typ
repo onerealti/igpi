@@ -1,7 +1,8 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, phase-badge
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 #import fletcher.shapes: diamond
 
+#phase-badge("Prototype")
 = Week 05: Prototyping I – Low Fidelity & Storyboard
 
 #section("Aim")[
