@@ -10,8 +10,8 @@
     if page-num > 2 {
       grid(
         columns: (1fr, 1fr),
-        align(left)[#text(8pt, fill: gray.darken(20%), font: "Liberation Sans")[Idea Generation & Product Innovation Lab (PC453ME)]],
-        align(right)[#text(8pt, fill: gray.darken(20%), font: "Liberation Sans")[Mechanical Engineering Dept, MCET]]
+        align(left)[#text(8pt, fill: gray.darken(20%), font: "sans-serif")[Idea Generation & Product Innovation Lab (PC453ME)]],
+        align(right)[#text(8pt, fill: gray.darken(20%), font: "sans-serif")[Mechanical Engineering Dept, MCET]]
       )
       v(-4pt)
       line(length: 100%, stroke: 0.5pt + gray)
@@ -20,13 +20,13 @@
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 1 {
-      align(center)[#text(9pt, fill: gray.darken(20%), font: "Liberation Sans")[#page-num]]
+      align(center)[#text(9pt, fill: gray.darken(20%), font: "sans-serif")[#page-num]]
     }
   }
 )
 
 #set text(
-  font: "Liberation Sans",
+  font: "sans-serif",
   size: 11pt,
   fill: rgb("1f2937"),
   spacing: 120%
@@ -84,8 +84,8 @@
   #text(16pt, weight: "bold", fill: primary-color)[CERTIFICATE]
 ]
 #v(1.5cm)
-#text(size: 12pt, leading: 1.5em)[
-  This is to certify that the laboratory work for the **Idea Generation and Product Innovation Laboratory (PC453ME)** has been successfully completed by **[Your Name]**, bearing Roll Number **[Your Roll Number]** of **B.E – IV Semester of Mechanical Engineering Department**, during the academic year **2025-2026**.
+#text(size: 12pt)[
+  This is to certify that the laboratory work for the *Idea Generation and Product Innovation Laboratory (PC453ME)* has been successfully completed by *[Your Name]*, bearing Roll Number *[Your Roll Number]* of *B.E – IV Semester of Mechanical Engineering Department*, during the academic year *2025-2026*.
 ]
 
 #v(4cm)
