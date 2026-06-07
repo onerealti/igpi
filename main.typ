@@ -57,8 +57,11 @@
 }
 
 #show heading.where(level: 2): it => {
-  set text(size: 11.5pt, weight: "bold", fill: primary-color.lighten(15%))
-  block(width: 100%, below: 0.8em, above: 1.2em)[#it]
+  block(width: 100%, below: 0.8em, above: 1.2em, breakable: false)[
+    #text(10pt, weight: "bold", fill: primary-color, font: "Arial", tracking: 1pt)[#upper(it.body)]
+    #v(0.2em)
+    #line(length: 100%, stroke: 0.75pt + primary-color.lighten(50%))
+  ]
 }
 
 #show heading.where(level: 3): it => {
@@ -97,7 +100,7 @@
     stroke: 0.5pt + black,
     inset: (x: 10pt, y: 8pt),
     [
-      #set text(font: "Consolas", size: 8.5pt)
+      #set text(font: "Consolas", size: 7.5pt)
       #it
     ]
   )

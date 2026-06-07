@@ -8,19 +8,9 @@
 
 // Clean Textbook-Style Section Header
 #let section(title, content) = {
-  block(
-    width: 100%,
-    below: 1.5em,
-    above: 1.5em,
-    breakable: true,
-    [
-      #text(10pt, weight: "bold", fill: primary-color, font: "Arial", tracking: 1pt)[#upper(title)]
-      #v(0.2em)
-      #line(length: 100%, stroke: 0.75pt + primary-color.lighten(50%))
-      #v(0.4em)
-      #content
-    ]
-  )
+  heading(level: 2, outlined: false)[#title]
+  content
+  v(1.5em)
 }
 
 // Styled Subsections

@@ -30,8 +30,8 @@
   === 2. Storyboard Sequence
   Our storyboard covers five primary operating steps:
   1. *Setup:* User sets the tracker on a flat surface with clear sky views and connects a 5V power source.
-  2. *Self-Test:* The Arduino boots, sweeps both servos to 90° (center), and checks sensor signals.
-  3. *Tracking:* The Arduino reads the four LDRs. If light differences exceed the threshold, it increments the servos by 1° to follow the light.
+  2. *Self-Test:* The Arduino boots, sweeps both servos to #box([90°]) (center), and checks sensor signals.
+  3. *Tracking:* The Arduino reads the four LDRs. If light differences exceed the threshold, it increments the servos by #box([1°]) to follow the light.
   4. *Locking:* Once LDR values equalize, the tracker holds its angle, maximizing panel output.
   5. *Night Reset:* When sensor values drop below 10% for 5 minutes (nighttime), the panel flat-packs and rotates back East.
 
@@ -44,39 +44,39 @@
       node-fill: primary-color.lighten(95%),
       edge-stroke: 0.7pt + secondary-color,
       
-      node((0,0), [Power On], corner-radius: 4pt),
-      edge((0,0), (0,1), "-|>"),
-      node((0,1), [Calibration], corner-radius: 4pt),
-      edge((0,1), (0,2), "-|>"),
-      node((0,2), [Sunlight?], shape: diamond, inset: 5pt),
+      node((-0.3,0), [Power On], corner-radius: 4pt),
+      edge((-0.3,0), (-0.3,1), "-|>"),
+      node((-0.3,1), [Calibration], corner-radius: 4pt),
+      edge((-0.3,1), (-0.3,2), "-|>"),
+      node((-0.3,2), [Sunlight?], shape: diamond, inset: 5pt),
       
-      edge((0,2), (1.2,2), "-|>", label: [No]),
-      node((1.2,2), [Standby Mode], corner-radius: 4pt),
-      edge((1.2,2), (1.2,3), "-|>"),
-      node((1.2,3), [Sunrise?], shape: diamond, inset: 5pt),
-      edge((1.2,3), (0,1), "-|>", label: [Yes], bend: -35deg),
-      edge((1.2,3), (1.2,2), "-|>", label: [No], bend: -45deg),
+      edge((-0.3,2), (0.9,2), "-|>", label: [No]),
+      node((0.9,2), [Standby Mode], corner-radius: 4pt),
+      edge((0.9,2), (0.9,3), "-|>"),
+      node((0.9,3), [Sunrise?], shape: diamond, inset: 5pt),
+      edge((0.9,3), (-0.3,1), "-|>", label: [Yes], bend: -35deg),
+      edge((0.9,3), (0.9,2), "-|>", label: [No], bend: -45deg),
       
-      edge((0,2), (0,3), "-|>", label: [Yes]),
-      node((0,3), [Read 4 LDRs], corner-radius: 4pt),
-      edge((0,3), (0,4), "-|>"),
-      node((0,4), [Diff > Threshold?], shape: diamond, inset: 3pt),
+      edge((-0.3,2), (-0.3,3), "-|>", label: [Yes]),
+      node((-0.3,3), [Read 4 LDRs], corner-radius: 4pt),
+      edge((-0.3,3), (-0.3,4), "-|>"),
+      node((-0.3,4), [Diff > Threshold?], shape: diamond, inset: 3pt),
       
-      edge((0,4), (-1.2,4), "-|>", label: [Yes]),
-      node((-1.2,4), [Adjust Servos], corner-radius: 4pt),
-      edge((-1.2,4), (-1.2,3), "-|>"),
-      edge((-1.2,3), (0,3), "-|>", bend: -25deg),
+      edge((-0.3,4), (-1.5,4), "-|>", label: [Yes]),
+      node((-1.5,4), [Adjust Servos], corner-radius: 4pt),
+      edge((-1.5,4), (-1.5,3), "-|>"),
+      edge((-1.5,3), (-0.3,3), "-|>", bend: -25deg),
       
-      edge((0,4), (0,5), "-|>", label: [No]),
-      node((0,5), [Maintain Position], corner-radius: 4pt),
-      edge((0,5), (0,3), "-|>", bend: 45deg)
+      edge((-0.3,4), (-0.3,5), "-|>", label: [No]),
+      node((-0.3,5), [Maintain Position], corner-radius: 4pt),
+      edge((-0.3,5), (-0.3,3), "-|>", bend: 45deg)
     )
   ]
   #v(0.5em)
 
   === 4. Initial Design Insights
   - *Light Shading:* Bare LDR sensors were easily confused by ground reflections. We must add cylindrical shrouds.
-  - *Jitter:* Fast code loops caused servos to jitter. We need to add a delay and reduce adjustment steps to 1°.
+  - *Jitter:* Fast code loops caused servos to jitter. We need to add a delay and reduce adjustment steps to #box([1°]).
 ]
 
 #section("Deliverables")[

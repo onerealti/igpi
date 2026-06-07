@@ -29,7 +29,6 @@
   #align(center)[
     #table(
       columns: (1.5fr, 2.5fr, 1.2fr, 1fr, 1fr),
-      inset: 6pt,
       align: (left, left, center, center, center),
       [*Configuration*], [*Description*], [*Efficiency Gain*], [*Complexity*], [*Cost*],
       [Fixed Mount], [Set static tilt based on latitude], [Baseline (0%)], [Low], [Low],

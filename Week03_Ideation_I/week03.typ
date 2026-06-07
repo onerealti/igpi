@@ -27,7 +27,7 @@
 
 #section("Activity")[
   === 1. Brainstorming Output (20 Concepts)
-  1. Gear-driven base for 360-degree Azimuth rotation.
+  1. Gear-driven base for #box([360-degree]) Azimuth rotation.
   2. Use of hydraulic pistons for heavy-duty elevation adjustment.
   3. LDR sensors housed in a "cross" shaped divider for directional sensitivity.
   4. Automatic "night-return" feature to face East at sunset.
@@ -54,55 +54,55 @@
   - *Adapt:* Adapt "sunflower" behavior (flat-packing at night to protect the panel).
   - *Modify:* Deepen the sensor wells to block ambient horizontal light.
   - *Put to another use:* Log sunlight changes to map shading patterns on sites.
-  - *Eliminate:* Limit rotation to 180° to eliminate slip rings or twisted cables.
+  - *Eliminate:* Limit rotation to #box([180°]) to eliminate slip rings or twisted cables.
   - *Rearrange:* Place heavy Azimuth motor at the base and Elevation motor at the top of the pillar.
 
   === 3. Project Mind Map (Fletcher Diagram)
   #v(0.5em)
   #align(center)[
     #diagram(
-      spacing: (16mm, 12mm),
-      node-stroke: 0.7pt + primary-color,
+      spacing: (18mm, 15mm),
+      node-stroke: 0.5pt + primary-color,
       node-fill: primary-color.lighten(95%),
       edge-stroke: 0.7pt + primary-color,
       
       node((0,0), [Dual-Axis Efficiency], corner-radius: 6pt, stroke: 1.5pt + primary-color),
       
       // Mechanical branch
-      edge((0,0), (1.1,1.1), "-"),
-      node((1.1,1.1), [Mechanical], corner-radius: 4pt),
-      edge((1.1,1.1), (2.2,1.6), "-"),
-      node((2.2,1.6), [Gears & Servos]),
-      edge((1.1,1.1), (2.2,1.0), "-"),
-      node((2.2,1.0), [Thrust Bearings]),
-      edge((1.1,1.1), (2.2,0.4), "-"),
-      node((2.2,0.4), [PLA vs PETG]),
+      edge((0,0), (1,1), "-"),
+      node((1,1), [*Mechanical*], corner-radius: 4pt),
+      edge((1,1), (2,1.5), "-"),
+      node((2,1.5), [Gears & Servos], corner-radius: 3pt),
+      edge((1,1), (2,1.0), "-"),
+      node((2,1.0), [Thrust Bearings], corner-radius: 3pt),
+      edge((1,1), (2,0.5), "-"),
+      node((2,0.5), [PLA vs PETG], corner-radius: 3pt),
       
       // Electrical branch
-      edge((0,0), (-1.1,1.1), "-"),
-      node((-1.1,1.1), [Electrical], corner-radius: 4pt),
-      edge((-1.1,1.1), (-2.2,1.6), "-"),
-      node((-2.2,1.6), [Arduino Nano]),
-      edge((-1.1,1.1), (-2.2,1.0), "-"),
-      node((-2.2,1.0), [LDR Sensors]),
-      edge((-1.1,1.1), (-2.2,0.4), "-"),
-      node((-2.2,0.4), [Capacitors]),
+      edge((0,0), (-1,1), "-"),
+      node((-1,1), [*Electrical*], corner-radius: 4pt),
+      edge((-1,1), (-2,1.5), "-"),
+      node((-2,1.5), [Arduino Nano], corner-radius: 3pt),
+      edge((-1,1), (-2,1.0), "-"),
+      node((-2,1.0), [LDR Sensors], corner-radius: 3pt),
+      edge((-1,1), (-2,0.5), "-"),
+      node((-2,0.5), [Capacitors], corner-radius: 3pt),
       
       // Environmental branch
-      edge((0,0), (1.1,-1.1), "-"),
-      node((1.1,-1.1), [Environmental], corner-radius: 4pt),
-      edge((1.1,-1.1), (2.2,-1.6), "-"),
-      node((2.2,-1.6), [Wind Drag]),
-      edge((1.1,-1.1), (2.2,-0.9), "-"),
-      node((2.2,-0.9), [Rain & Dust]),
+      edge((0,0), (1,-1), "-"),
+      node((1,-1), [*Environmental*], corner-radius: 4pt),
+      edge((1,-1), (2,-1.5), "-"),
+      node((2,-1.5), [Wind Drag], corner-radius: 3pt),
+      edge((1,-1), (2,-0.8), "-"),
+      node((2,-0.8), [Rain & Dust], corner-radius: 3pt),
       
       // UI Branch
-      edge((0,0), (-1.1,-1.1), "-"),
-      node((-1.1,-1.1), [User Interface], corner-radius: 4pt),
-      edge((-1.1,-1.1), (-2.2,-1.6), "-"),
-      node((-2.2,-1.6), [Calibration Buttons]),
-      edge((-1.1,-1.1), (-2.2,-0.9), "-"),
-      node((-2.2,-0.9), [LCD Display])
+      edge((0,0), (-1,-1), "-"),
+      node((-1,-1), [*User Interface*], corner-radius: 4pt),
+      edge((-1,-1), (-2,-1.5), "-"),
+      node((-2,-1.5), [Calibration Buttons], corner-radius: 3pt),
+      edge((-1,-1), (-2,-0.8), "-"),
+      node((-2,-0.8), [LCD Display], corner-radius: 3pt)
     )
   ]
   #v(0.5em)

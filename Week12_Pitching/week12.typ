@@ -34,7 +34,7 @@
   === 2. Mock Presentation Q&A Defense
   We anticipated examiner questions and drafted engineering answers:
   - *Question:* "Why did you use PETG for the solar panel holder instead of PLA?"
-    - *Answer:* "PETG has a higher glass transition temperature (80°C) than PLA (60°C). Since solar panels absorb heat and can get very hot, using PETG prevents the structural holder from softening or warping under hot sunlight."
+    - *Answer:* "PETG has a higher glass transition temperature (#box([80°C])) than PLA (#box([60°C])). Since solar panels absorb heat and can get very hot, using PETG prevents the structural holder from softening or warping under hot sunlight."
   - *Question:* "How did you verify the thrust bearing works?"
     - *Answer:* "We measured the current draw of the Azimuth servo. Without the thrust bearing, the servo drew 350mA during slow panning due to friction. With the bearing, current draw dropped to 210mA, confirming less load on the servo."
 

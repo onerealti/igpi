@@ -94,7 +94,7 @@
   - *Part Count Reduction:* Combined LDR sensor divider housing and panel holder. (*Pass*)
   - *Hardware Standardization:* Used M3 socket-head screws and nuts exclusively. (*Pass*)
   - *Self-Aligning Assembly:* Designed keyways for servo horns to prevent misaligned mounting. (*Pass*)
-  - *3D Print Optimization:* Used 45° chamfers on overhangs to avoid temporary support waste. (*Pass*)
+  - *3D Print Optimization:* Used #box([45°]) chamfers on overhangs to avoid temporary support waste. (*Pass*)
 ]
 
 #section("Deliverables")[

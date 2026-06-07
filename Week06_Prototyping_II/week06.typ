@@ -34,13 +34,12 @@
   #align(center)[
     #table(
       columns: (1.5fr, 3fr, 1.2fr),
-      inset: 6pt,
       align: (left, left, center),
       [*Part Name*], [*Function*], [*Material*],
       [Base Plate], [Houses Azimuth servo, circuit boards, and battery weight.], [PLA],
       [Main Pillar], [Vertical column; routes cables internally and holds Elevation servo.], [PLA],
       [Panel Holder], [Frame holding the solar panel. Structured with ribs for strength.], [PETG],
-      [Sensor Mount], [Cross-divider holding 4 LDRs at 90° intervals to block side reflections.], [PLA],
+      [Sensor Mount], [Cross-divider holding 4 LDRs at #box([90°]) intervals to block side reflections.], [PLA],
       [Servo Horn Adaptor], [Connects the metal servo output horn to the plastic pillar socket.], [PLA]
     )
   ]
@@ -48,7 +47,7 @@
   === 3. Assembly Constraints (CAD Mates)
   - *Concentric:* Aligned the Azimuth servo shaft with the center of the Main Pillar socket.
   - *Coincident:* Placed the base of the Pillar flush against the Base Plate thrust bearing surface.
-  - *Limit Angle:* Constrained the Elevation rotation to between 0° (horizontal) and 90° (vertical) to prevent the panel holder from colliding with the pillar.
+  - *Limit Angle:* Constrained the Elevation rotation to between #box([0°]) (horizontal) and #box([90°]) (vertical) to prevent the panel holder from colliding with the pillar.
   - *Distance:* Maintained a minimum 5mm gap between the panel and the Elevation servo body to avoid wire pinch.
 
   === 4. 2D Assembly Layout Schematic (CAD View)
@@ -72,7 +71,6 @@
       
       // Draw Pillar
       rect((-0.3, 0.84), (0.3, 2.8), fill: rgb("f1f5f9"), stroke: 1.2pt + primary-color)
-      content((0.0, 1.82), text(9pt)[Main Pillar (PLA)], angle: 90deg)
       
       // Draw Elevation Servo Box at top of Pillar
       rect((-0.35, 2.8), (0.35, 3.2), fill: rgb("e2e8f0"), stroke: 0.8pt + black)
@@ -81,15 +79,13 @@
       // Elevation Pivot Circle
       circle((0.0, 3.2), radius: 0.15, fill: primary-color)
       
-      // Draw Panel Mount and Panel (Tilted at 40 degrees)
+      // Draw Panel Mount and Panel (Tilted at #box([40 degrees]))
       group({
         rotate(40deg)
         line((-1.5, 3.2), (1.5, 3.2), stroke: 4pt + primary-color) // solar panel
-        content((0.0, 3.4), text(9pt)[Solar Panel & Holder (PETG)])
         
         // Sensor Cross on top of panel
         rect((-0.2, 3.2), (0.2, 3.7), fill: rgb("cbd5e1"), stroke: 0.8pt + black)
-        content((0.0, 3.45), text(7pt)[LDR Array])
       })
       
       // Add Callout arrows

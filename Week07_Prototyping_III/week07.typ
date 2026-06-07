@@ -23,8 +23,8 @@
   - *Layer Height:* 0.2mm (standard resolution).
   - *Infill Density:* 40% (Tri-Hexagonal pattern for mechanical and torsional strength).
   - *Wall Line Count:* 4 (crucial for structural strength and self-tapping screw holes).
-  - *Nozzle Temperature:* 210°C (PLA for Base/Pillar) / 240°C (PETG for Panel Holder).
-  - *Bed Temperature:* 60°C (PLA) / 80°C (PETG to prevent warping).
+  - *Nozzle Temperature:* #box([210°C]) (PLA for Base/Pillar) / #box([240°C]) (PETG for Panel Holder).
+  - *Bed Temperature:* #box([60°C]) (PLA) / #box([80°C]) (PETG to prevent warping).
   - *Supports:* Tree supports enabled (for the Pillar overhang brackets).
 
   === 2. Fabrication & Assembly Log
@@ -32,7 +32,6 @@
   #align(center)[
     #table(
       columns: (1.2fr, 2.3fr, 2.5fr),
-      inset: 6pt,
       align: (left, left, left),
       [*Date*], [*Activity*], [*Observations & Solutions*],
       [Oct 10], [Print Base Plate & Pillar], [The pillar base warped slightly. *Fix:* Re-leveled bed and added a brim.],
