@@ -26,15 +26,15 @@
       import cetz.draw: *
       
       // Draw base
-      rect((-1.5, 0), (1.5, 0.4), fill: rgb("e2e8f0"), stroke: 1pt + black)
-      content((0, 0.2), [Base Box])
+      rect((-1.5, 0.0), (1.5, 0.4), fill: rgb("e2e8f0"), stroke: 1pt + black)
+      content((0.0, 0.2), [Base Box])
       
       // Draw pillar
       rect((-0.2, 0.4), (0.2, 2.5), fill: rgb("cbd5e1"), stroke: 1pt + black)
-      content((0, 1.45), [Pillar], rotate: 90deg)
+      content((0.0, 1.45), [Pillar], rotate: 90deg)
       
       // Draw elevation pivot point
-      circle((0, 2.5), radius: 0.15, fill: rgb("1f3b68"))
+      circle((0.0, 2.5), radius: 0.15, fill: rgb("1f3b68"))
       
       // Draw tilted panel holder
       line((-1.0, 1.9), (1.0, 3.1), stroke: 3pt + rgb("1f3b68"))
