@@ -1,4 +1,4 @@
-#import "../template.typ": section, sub-section
+#import "../template.typ": section, sub-section, primary-color, secondary-color
 #import "@preview/cetz:0.5.2"
 
 = Week 06: Prototyping II – CAD Modeling
