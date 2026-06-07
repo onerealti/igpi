@@ -78,7 +78,8 @@
       (bottom: 0.5pt + gray.lighten(20%))
     }
   },
-  fill: none
+  fill: none,
+  inset: (x: 8pt, y: 7pt)
 )
 
 // Bullet list spacing

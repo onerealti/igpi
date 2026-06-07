@@ -56,7 +56,8 @@
   const int pinElevationServo = 10;
 
   // LDR sensor pin definitions (A0-A3)
-  // TL = Top-Left, TR = Top-Right, BL = Bottom-Left, BR = Bottom-Right
+  // TL = Top-Left, TR = Top-Right
+  // BL = Bottom-Left, BR = Bottom-Right
   const int pinLdrTL = A0;
   const int pinLdrTR = A1;
   const int pinLdrBL = A2;

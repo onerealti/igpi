@@ -90,20 +90,20 @@
       
       // Add Callout arrows
       // Callout 1: Solar Panel
-      line((1.5, 4.0), (0.8, 3.6), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((1.8, 4.1), text(8pt)[Solar Panel (10W)])
+      line((1.5, 4.1), (0.8, 3.6), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((1.6, 4.1), text(8pt)[Solar Panel (10W)], anchor: "west")
       
       // Callout 2: LDR Sensor Shroud
-      line((-1.2, 4.2), (-0.2, 3.8), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((-1.5, 4.3), text(8pt)[LDR Shroud & Array])
+      line((-1.5, 4.3), (-0.2, 3.8), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((-1.6, 4.3), text(8pt)[LDR Shroud & Array], anchor: "east")
       
       // Callout 3: Main Pillar
-      line((-1.4, 2.0), (-0.35, 1.9), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((-1.8, 2.0), text(8pt)[Vertical Pillar (PLA)])
+      line((-1.5, 2.0), (-0.35, 1.9), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((-1.6, 2.0), text(8pt)[Vertical Pillar (PLA)], anchor: "east")
       
       // Callout 4: Thrust Bearing
-      line((1.4, 1.1), (0.5, 0.83), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((1.8, 1.2), text(8pt)[Thrust Bearing])
+      line((1.5, 1.2), (0.5, 0.83), stroke: 0.5pt + gray, mark: (end: ">"))
+      content((1.6, 1.2), text(8pt)[Thrust Bearing], anchor: "west")
     })
   ]
   #v(0.5em)

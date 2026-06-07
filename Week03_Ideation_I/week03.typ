@@ -64,7 +64,7 @@
       spacing: (18mm, 15mm),
       node-stroke: 0.5pt + primary-color,
       node-fill: primary-color.lighten(95%),
-      edge-stroke: 0.7pt + primary-color,
+      edge-stroke: 1.0pt + primary-color,
       
       node((0,0), [Dual-Axis Efficiency], corner-radius: 6pt, stroke: 1.5pt + primary-color),
       
@@ -91,18 +91,18 @@
       // Environmental branch
       edge((0,0), (1,-1), "-"),
       node((1,-1), [*Environmental*], corner-radius: 4pt),
-      edge((1,-1), (2,-1.5), "-"),
-      node((2,-1.5), [Wind Drag], corner-radius: 3pt),
-      edge((1,-1), (2,-0.8), "-"),
-      node((2,-0.8), [Rain & Dust], corner-radius: 3pt),
+      edge((1,-1), (2,-0.6), "-"),
+      node((2,-0.6), [Wind Drag], corner-radius: 3pt),
+      edge((1,-1), (2,-1.4), "-"),
+      node((2,-1.4), [Rain & Dust], corner-radius: 3pt),
       
       // UI Branch
       edge((0,0), (-1,-1), "-"),
       node((-1,-1), [*User Interface*], corner-radius: 4pt),
-      edge((-1,-1), (-2,-1.5), "-"),
-      node((-2,-1.5), [Calibration Buttons], corner-radius: 3pt),
-      edge((-1,-1), (-2,-0.8), "-"),
-      node((-2,-0.8), [LCD Display], corner-radius: 3pt)
+      edge((-1,-1), (-2,-0.6), "-"),
+      node((-2,-0.6), [Calib. Buttons], corner-radius: 3pt),
+      edge((-1,-1), (-2,-1.4), "-"),
+      node((-2,-1.4), [LCD Display], corner-radius: 3pt)
     )
   ]
   #v(0.5em)

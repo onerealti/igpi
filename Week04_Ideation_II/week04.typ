@@ -53,7 +53,7 @@
   
   #align(center)[
     #table(
-      columns: (0.7fr, 4fr, 0.8fr, 1.2fr, 1.3fr),
+      columns: (0.4fr, 4.2fr, 0.6fr, 1.0fr, 1.8fr),
       align: (center, left, center, right, right),
       [*S.No.*], [*Component Description*], [*Qty*], [*Unit Cost (INR)*], [*Total Cost (INR)*],
       [1], [Arduino Nano (ATmega328P)], [1], [350.00], [350.00],
@@ -64,7 +64,7 @@
       [6], [M3 Socket-Head Screw Set & Nuts], [1 set], [150.00], [150.00],
       [7], [Miniature Ball Thrust Bearing (F8-16M)], [1], [180.00], [180.00],
       table.hline(stroke: 0.75pt + black),
-      table.cell(colspan: 4, align: right)[*Total Estimated Material Cost:*], [*INR 2,550.00*]
+      table.cell(colspan: 4, align: right)[*Total Estimated Material Cost:*], [#box([*INR 2,550.00*])]
     )
   ]
 ]
