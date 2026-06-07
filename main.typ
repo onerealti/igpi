@@ -57,7 +57,7 @@
 }
 
 #show heading.where(level: 2): it => {
-  block(width: 100%, below: 0.8em, above: 1.2em, breakable: false)[
+  block(width: 100%, below: 0.6em, above: 1.0em, breakable: false)[
     #text(10pt, weight: "bold", fill: primary-color, font: "Arial", tracking: 1pt)[#upper(it.body)]
     #v(0.2em)
     #line(length: 100%, stroke: 0.75pt + primary-color.lighten(50%))

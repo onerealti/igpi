@@ -10,7 +10,7 @@
 #let section(title, content) = {
   heading(level: 2, outlined: false)[#title]
   content
-  v(1.5em)
+  v(1.0em)
 }
 
 // Styled Subsections
