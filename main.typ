@@ -71,10 +71,16 @@
   block(width: 100%, below: 0.6em, above: 1.0em)[#it]
 }
 
-// Table defaults
+// Table defaults (Clean Booktabs Academic Style)
 #show table: set table(
-  stroke: (x, y) => if y == 0 { (bottom: 1.5pt + primary-color) } else { 0.5pt + gray.lighten(40%) },
-  fill: (col, row) => if row == 0 { primary-color.lighten(90%) } else if calc.odd(row) { rgb("f8fafc") } else { none }
+  stroke: (x, y) => {
+    if y == 0 {
+      (top: 1.5pt + black, bottom: 0.75pt + black)
+    } else {
+      (bottom: 0.5pt + gray.lighten(20%))
+    }
+  },
+  fill: none
 )
 
 // Bullet list spacing
