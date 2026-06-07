@@ -1,5 +1,5 @@
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
-#import "@preview/cetz:0.3.2"
+#import "@preview/cetz:0.5.2"
 
 #let primary-color = rgb("1f3b68")
 #let secondary-color = rgb("1f2937")
