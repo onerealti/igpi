@@ -107,13 +107,13 @@
       }
       
       // Draw Legend
-      rect((3.6, 0.3), (5.9, 1.2), fill: white, stroke: 0.5pt + gray)
+      rect((3.6, 3.3), (5.9, 4.2), fill: white, stroke: 0.5pt + gray)
       // Legend entry 1: Fixed
-      line((3.8, 0.9), (4.3, 0.9), stroke: (paint: secondary-color.lighten(30%), dash: "dashed"))
-      content((4.45, 0.9), text(7pt)[Fixed Panel (Baseline)], anchor: "west")
+      line((3.8, 3.9), (4.3, 3.9), stroke: (paint: secondary-color.lighten(30%), dash: "dashed"))
+      content((4.45, 3.9), text(7pt)[Fixed Panel (Baseline)], anchor: "west")
       // Legend entry 2: Tracking
-      line((3.8, 0.6), (4.3, 0.6), stroke: 2pt + primary-color)
-      content((4.45, 0.6), text(7pt)[Helio-Track S1 (Dual-Axis)], anchor: "west")
+      line((3.8, 3.6), (4.3, 3.6), stroke: 2pt + primary-color)
+      content((4.45, 3.6), text(7pt)[Helio-Track S1 (Dual-Axis)], anchor: "west")
     })
   ]
   #v(0.5em)

@@ -81,11 +81,12 @@
       
       // Draw Panel Mount and Panel (Tilted at #box([40 degrees]))
       group({
+        translate((0.0, 3.2))
         rotate(40deg)
-        line((-1.5, 3.2), (1.5, 3.2), stroke: 4pt + primary-color) // solar panel
+        line((-1.5, 0.0), (1.5, 0.0), stroke: 4pt + primary-color) // solar panel
         
         // Sensor Cross on top of panel
-        rect((-0.2, 3.2), (0.2, 3.7), fill: rgb("cbd5e1"), stroke: 0.8pt + black)
+        rect((-0.2, 0.0), (0.2, 0.5), fill: rgb("cbd5e1"), stroke: 0.8pt + black)
       })
       
       // Add Callout arrows

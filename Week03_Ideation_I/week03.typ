@@ -61,7 +61,7 @@
   #v(0.5em)
   #align(center)[
     #diagram(
-      spacing: (18mm, 15mm),
+      spacing: (13mm, 15mm),
       node-stroke: 0.5pt + primary-color,
       node-fill: primary-color.lighten(95%),
       edge-stroke: 1.0pt + primary-color,
@@ -69,40 +69,40 @@
       node((0,0), [Dual-Axis Efficiency], corner-radius: 6pt, stroke: 1.5pt + primary-color),
       
       // Mechanical branch
-      edge((0,0), (1,1), "-"),
-      node((1,1), [*Mechanical*], corner-radius: 4pt),
-      edge((1,1), (2,1.5), "-"),
-      node((2,1.5), [Gears & Servos], corner-radius: 3pt),
-      edge((1,1), (2,1.0), "-"),
-      node((2,1.0), [Thrust Bearings], corner-radius: 3pt),
-      edge((1,1), (2,0.5), "-"),
-      node((2,0.5), [PLA vs PETG], corner-radius: 3pt),
+      edge((0,0), (1.0,1.0), "-"),
+      node((1.0,1.0), [*Mechanical*], corner-radius: 4pt),
+      edge((1.0,1.0), (2.0,1.8), "-"),
+      node((2.0,1.8), [Gears & Servos], corner-radius: 3pt),
+      edge((1.0,1.0), (2.0,1.0), "-"),
+      node((2.0,1.0), [Thrust Bearings], corner-radius: 3pt),
+      edge((1.0,1.0), (2.0,0.2), "-"),
+      node((2.0,0.2), [PLA vs PETG], corner-radius: 3pt),
       
       // Electrical branch
-      edge((0,0), (-1,1), "-"),
-      node((-1,1), [*Electrical*], corner-radius: 4pt),
-      edge((-1,1), (-2,1.5), "-"),
-      node((-2,1.5), [Arduino Nano], corner-radius: 3pt),
-      edge((-1,1), (-2,1.0), "-"),
-      node((-2,1.0), [LDR Sensors], corner-radius: 3pt),
-      edge((-1,1), (-2,0.5), "-"),
-      node((-2,0.5), [Capacitors], corner-radius: 3pt),
+      edge((0,0), (-1.0,1.0), "-"),
+      node((-1.0,1.0), [*Electrical*], corner-radius: 4pt),
+      edge((-1.0,1.0), (-2.0,1.8), "-"),
+      node((-2.0,1.8), [Arduino Nano], corner-radius: 3pt),
+      edge((-1.0,1.0), (-2.0,1.0), "-"),
+      node((-2.0,1.0), [LDR Sensors], corner-radius: 3pt),
+      edge((-1.0,1.0), (-2.0,0.2), "-"),
+      node((-2.0,0.2), [Capacitors], corner-radius: 3pt),
       
       // Environmental branch
-      edge((0,0), (1,-1), "-"),
-      node((1,-1), [*Environmental*], corner-radius: 4pt),
-      edge((1,-1), (2,-0.6), "-"),
-      node((2,-0.6), [Wind Drag], corner-radius: 3pt),
-      edge((1,-1), (2,-1.4), "-"),
-      node((2,-1.4), [Rain & Dust], corner-radius: 3pt),
+      edge((0,0), (1.0,-1.0), "-"),
+      node((1.0,-1.0), [*Environmental*], corner-radius: 4pt),
+      edge((1.0,-1.0), (2.0,-0.6), "-"),
+      node((2.0,-0.6), [Wind Drag], corner-radius: 3pt),
+      edge((1.0,-1.0), (2.0,-1.4), "-"),
+      node((2.0,-1.4), [Rain & Dust], corner-radius: 3pt),
       
       // UI Branch
-      edge((0,0), (-1,-1), "-"),
-      node((-1,-1), [*User Interface*], corner-radius: 4pt),
-      edge((-1,-1), (-2,-0.6), "-"),
-      node((-2,-0.6), [Calib. Buttons], corner-radius: 3pt),
-      edge((-1,-1), (-2,-1.4), "-"),
-      node((-2,-1.4), [LCD Display], corner-radius: 3pt)
+      edge((0,0), (-1.0,-1.0), "-"),
+      node((-1.0,-1.0), [*User Interface*], corner-radius: 4pt),
+      edge((-1.0,-1.0), (-2.0,-0.6), "-"),
+      node((-2.0,-0.6), [Calib. Buttons], corner-radius: 3pt),
+      edge((-1.0,-1.0), (-2.0,-1.4), "-"),
+      node((-2.0,-1.4), [LCD Display], corner-radius: 3pt)
     )
   ]
   #v(0.5em)

@@ -41,10 +41,10 @@
       content((0.4, 3.0), text(10pt)[Solar Panel], angle: 30deg)
       
       // Draw normal vector sun rays
-      line((0.8, 3.7), (0.3, 2.8), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
-      line((0.2, 3.4), (-0.3, 2.5), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
-      line((-0.4, 3.0), (-0.9, 2.1), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
-      content((0.5, 3.8), [Sun Rays])
+      line((0.05, 3.58), (0.5, 2.8), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
+      line((-0.45, 3.28), (0.0, 2.5), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
+      line((-0.95, 2.98), (-0.5, 2.2), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
+      content((-0.6, 3.5), [Sun Rays])
     })
   ]
   #v(0.5em)
