@@ -28,7 +28,7 @@
     - _Net Gain:_ Tested with a 20W panel. Daily generation increased by 32% (an average gain of 6.4W), while average motor draw was under 0.5W. *Net energy gain is positive.*
 
   === 2. Power Generation Performance Chart
-  The graph below compares the measured power output (Watts) of a static solar panel vs. the **Helio-Track S1** dual-axis tracker over a 12-hour test run (8:00 AM to 6:00 PM):
+  The graph below compares the measured power output (Watts) of a static solar panel vs. the *Helio-Track S1* dual-axis tracker over a 12-hour test run (8:00 AM to 6:00 PM):
 
   #v(0.5em)
   #align(center)[
@@ -76,7 +76,7 @@
       
       // Axes Titles
       content((3.0, -0.65), text(9pt, weight: "bold")[Time of Day])
-      content((-0.8, 2.1), text(9pt, weight: "bold")[Power Output (W)], rotate: -90deg)
+      content((-0.8, 2.1), text(9pt, weight: "bold")[Power Output (W)], angle: -90deg)
       
       // Curve 1: Fixed Tilt Panel (sine-like curve)
       let fixed-points = (
@@ -85,7 +85,7 @@
       )
       // draw line
       for i in range(0, fixed-points.len() - 1) {
-        line(fixed-points.at(i), fixed-points.at(i+1), stroke: (paint: gray.darken(20%), width: 1.5pt))
+        line(fixed-points.at(i), fixed-points.at(i+1), stroke: 1.5pt + gray.darken(20%))
       }
       // Draw points
       for pt in fixed-points {
@@ -99,7 +99,7 @@
       )
       // draw line
       for i in range(0, tracking-points.len() - 1) {
-        line(tracking-points.at(i), tracking-points.at(i+1), stroke: (paint: rgb("d97706"), width: 2pt))
+        line(tracking-points.at(i), tracking-points.at(i+1), stroke: 2pt + rgb("d97706"))
       }
       // Draw points
       for pt in tracking-points {
@@ -109,11 +109,11 @@
       // Draw Legend
       rect((3.6, 0.3), (5.9, 1.2), fill: rgb("ffffff").lighten(90%), stroke: 0.5pt + gray)
       // Legend entry 1: Fixed
-      line((3.8, 0.9), (4.3, 0.9), stroke: (paint: gray.darken(20%), width: 1.5pt))
-      content((4.45, 0.9), text(7pt)[Fixed Panel (Baseline)], align: left)
+      line((3.8, 0.9), (4.3, 0.9), stroke: 1.5pt + gray.darken(20%))
+      content((4.45, 0.9), text(7pt)[Fixed Panel (Baseline)], anchor: "west")
       // Legend entry 2: Tracking
-      line((3.8, 0.6), (4.3, 0.6), stroke: (paint: rgb("d97706"), width: 2pt))
-      content((4.45, 0.6), text(7pt)[Helio-Track S1 (Dual-Axis)], align: left)
+      line((3.8, 0.6), (4.3, 0.6), stroke: 2pt + rgb("d97706"))
+      content((4.45, 0.6), text(7pt)[Helio-Track S1 (Dual-Axis)], anchor: "west")
     })
   ]
   #v(0.5em)

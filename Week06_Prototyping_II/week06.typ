@@ -62,22 +62,22 @@
       
       // Draw Base Box
       rect((-1.8, 0.0), (1.8, 0.5), fill: rgb("f8fafc"), stroke: 1.2pt + primary-color)
-      content((0.0, 0.25), [Base Housing (PLA)], frame: "none")
+      content((0.0, 0.25), [Base Housing (PLA)])
       
       // Draw Azimuth Servo Box inside Base
       rect((-0.4, 0.5), (0.4, 0.8), fill: rgb("e2e8f0"), stroke: 0.8pt + black)
-      content((0.0, 0.65), [Azimuth Servo], size: 7.5pt)
+      content((0.0, 0.65), text(7.5pt)[Azimuth Servo])
       
       // Thrust Bearing line
       line((-0.6, 0.82), (0.6, 0.82), stroke: 1.5pt + gray)
       
       // Draw Pillar
       rect((-0.3, 0.84), (0.3, 2.8), fill: rgb("f1f5f9"), stroke: 1.2pt + primary-color)
-      content((0.0, 1.82), [Main Pillar (PLA)], rotate: 90deg, size: 9pt)
+      content((0.0, 1.82), text(9pt)[Main Pillar (PLA)], angle: 90deg)
       
       // Draw Elevation Servo Box at top of Pillar
       rect((-0.35, 2.8), (0.35, 3.2), fill: rgb("e2e8f0"), stroke: 0.8pt + black)
-      content((0.0, 3.0), [Elevation Servo], size: 7.5pt)
+      content((0.0, 3.0), text(7.5pt)[Elevation Servo])
       
       // Elevation Pivot Circle
       circle((0.0, 3.2), radius: 0.15, fill: primary-color)
@@ -86,29 +86,29 @@
       group({
         rotate(40deg)
         line((-1.5, 3.2), (1.5, 3.2), stroke: 4pt + primary-color) // solar panel
-        content((0.0, 3.4), [Solar Panel & Holder (PETG)], size: 9pt)
+        content((0.0, 3.4), text(9pt)[Solar Panel & Holder (PETG)])
         
         // Sensor Cross on top of panel
         rect((-0.2, 3.2), (0.2, 3.7), fill: rgb("cbd5e1"), stroke: 0.8pt + black)
-        content((0.0, 3.45), [LDR Array], size: 7pt)
+        content((0.0, 3.45), text(7pt)[LDR Array])
       })
       
       // Add Callout arrows
       // Callout 1: Solar Panel
       line((1.5, 4.0), (0.8, 3.6), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((1.8, 4.1), [Solar Panel (10W)], size: 8pt)
+      content((1.8, 4.1), text(8pt)[Solar Panel (10W)])
       
       // Callout 2: LDR Sensor Shroud
       line((-1.2, 4.2), (-0.2, 3.8), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((-1.5, 4.3), [LDR Shroud & Array], size: 8pt)
+      content((-1.5, 4.3), text(8pt)[LDR Shroud & Array])
       
       // Callout 3: Main Pillar
       line((-1.4, 2.0), (-0.35, 1.9), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((-1.8, 2.0), [Vertical Pillar (PLA)], size: 8pt)
+      content((-1.8, 2.0), text(8pt)[Vertical Pillar (PLA)])
       
       // Callout 4: Thrust Bearing
       line((1.4, 1.1), (0.5, 0.83), stroke: 0.5pt + gray, mark: (end: ">"))
-      content((1.8, 1.2), [Thrust Bearing], size: 8pt)
+      content((1.8, 1.2), text(8pt)[Thrust Bearing])
     })
   ]
   #v(0.5em)
