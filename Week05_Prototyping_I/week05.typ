@@ -1,4 +1,4 @@
-#import "../template.typ": section, sub-section, week-title
+#import "../template.typ": section, sub-section, primary-color, secondary-color, week-title
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 #import fletcher.shapes: diamond
 
@@ -40,9 +40,9 @@
   #align(center)[
     #diagram(
       spacing: (15mm, 15mm),
-      node-stroke: 0.7pt + rgb("1f3b68"),
-      node-fill: rgb("f0f4f8"),
-      edge-stroke: 0.7pt + rgb("555555"),
+      node-stroke: 0.7pt + primary-color,
+      node-fill: primary-color.lighten(95%),
+      edge-stroke: 0.7pt + secondary-color,
       
       node((0,0), [Power On], corner-radius: 4pt),
       edge((0,0), (0,1), "-|>"),

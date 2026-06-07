@@ -62,8 +62,7 @@
   v(1.0cm)
   block(width: 100%)[
     #show heading.where(level: 1): it => {
-      set text(size: 15pt, weight: "bold", fill: primary-color, font: "Arial")
-      it
+      text(15pt, weight: "bold", fill: primary-color, font: "Arial")[#it.body]
     }
     #text(9pt, weight: "bold", fill: gray.darken(30%), tracking: 1.5pt, font: "Arial")[#upper(week-num)] \
     #v(0.2em)

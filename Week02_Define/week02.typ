@@ -1,4 +1,4 @@
-#import "../template.typ": section, sub-section, week-title
+#import "../template.typ": section, sub-section, primary-color, week-title
 
 #week-title("Week 02", "Define Phase – POV & Problem Statement", "Define")
 
@@ -33,10 +33,8 @@
   === 2. Selected Design Challenge (HMW)
   Focusing on residential off-grid users, we defined our core challenge:
   #block(
-    fill: rgb("e0f2fe"),
-    inset: 10pt,
-    radius: 4pt,
-    stroke: 0.5pt + rgb("0284c7"),
+    inset: (left: 12pt, top: 4pt, bottom: 4pt),
+    stroke: (left: 3.5pt + primary-color),
     [*How might we design a robust, low-cost dual-axis solar tracking system that maximizes energy harvest for off-grid residential users while ensuring the mechanism remains energy-efficient and easy to maintain?*]
   )
 

@@ -1,4 +1,4 @@
-#import "../template.typ": section, sub-section, week-title
+#import "../template.typ": section, sub-section, primary-color, week-title
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 
 #week-title("Week 03", "Ideation Techniques I – Brainstorming & SCAMPER", "Ideate")
@@ -62,11 +62,11 @@
   #align(center)[
     #diagram(
       spacing: (16mm, 12mm),
-      node-stroke: 0.7pt + rgb("2e7d32"),
-      node-fill: rgb("e8f5e9"),
-      edge-stroke: 0.7pt + rgb("2e7d32"),
+      node-stroke: 0.7pt + primary-color,
+      node-fill: primary-color.lighten(95%),
+      edge-stroke: 0.7pt + primary-color,
       
-      node((0,0), [Dual-Axis Efficiency], corner-radius: 6pt, stroke: 1.5pt + rgb("2e7d32")),
+      node((0,0), [Dual-Axis Efficiency], corner-radius: 6pt, stroke: 1.5pt + primary-color),
       
       // Mechanical branch
       edge((0,0), (1.1,1.1), "-"),

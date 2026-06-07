@@ -4,10 +4,10 @@
 
 #set page(
   paper: "a4",
-  margin: (left: 3.0cm, right: 2.5cm, top: 3.0cm, bottom: 2.5cm),
+  margin: (x: 2.5cm, y: 2.5cm),
   header: context {
     let page-num = counter(page).get().first()
-    if page-num > 2 {
+    if page-num > 3 {
       let headings = query(selector(heading.where(level: 1)).before(here()))
       let current-title = if headings.len() > 0 {
         headings.last().body
@@ -25,13 +25,8 @@
   },
   footer: context {
     let page-num = counter(page).get().first()
-    let total-pages = counter(page).final().first()
-    if page-num > 1 {
-      grid(
-        columns: (1fr, 1fr),
-        align(left)[#text(8pt, fill: gray.darken(20%), font: "Arial")[B.E. Mechanical Engineering (PC453ME)]],
-        align(right)[#text(9pt, fill: primary-color, weight: "bold", font: "Arial")[#page-num / #total-pages]]
-      )
+    if page-num > 2 {
+      align(center)[#text(9pt, fill: primary-color, weight: "bold", font: "Arial")[#page-num]]
     }
   }
 )
@@ -113,17 +108,17 @@
 // ==========================================
 // COVER PAGE
 // ==========================================
-#place(top + left, dx: -2.0cm, dy: -2.2cm,
+#place(top + left, dx: -1.5cm, dy: -1.5cm,
   rect(
     width: 19.0cm,
-    height: 27.2cm,
+    height: 27.7cm,
     stroke: 1.5pt + primary-color
   )
 )
-#place(top + left, dx: -1.9cm, dy: -2.1cm,
+#place(top + left, dx: -1.3cm, dy: -1.3cm,
   rect(
-    width: 18.8cm,
-    height: 27.0cm,
+    width: 18.6cm,
+    height: 27.3cm,
     stroke: 0.5pt + primary-color
   )
 )
@@ -183,17 +178,17 @@
 // CERTIFICATE PAGE
 // ==========================================
 #pagebreak()
-#place(top + left, dx: -2.0cm, dy: -2.2cm,
+#place(top + left, dx: -1.5cm, dy: -1.5cm,
   rect(
     width: 19.0cm,
-    height: 27.2cm,
+    height: 27.7cm,
     stroke: 1.5pt + primary-color
   )
 )
-#place(top + left, dx: -1.9cm, dy: -2.1cm,
+#place(top + left, dx: -1.3cm, dy: -1.3cm,
   rect(
-    width: 18.8cm,
-    height: 27.0cm,
+    width: 18.6cm,
+    height: 27.3cm,
     stroke: 0.5pt + primary-color
   )
 )
@@ -241,7 +236,7 @@
 ]
 #v(1.5cm)
 
-#outline(title: none, indent: 1.5em)
+#outline(title: none, indent: 1.5em, depth: 1)
 
 #pagebreak()
 
@@ -252,40 +247,33 @@
 Design thinking is a human-centered, iterative problem-solving framework. It consists of five core stages: Empathize with users, Define their core problems, Ideate creative solutions, Prototype rough representations, and Test them in the real world. It is a flexible, non-linear approach that embraces continuous learning and refinement.
 
 #v(0.5em)
-#grid(
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-  column-gutter: 5pt,
-  align: center,
-  block(fill: rgb("e0f2fe"), inset: 8pt, radius: 4pt, width: 100%)[#text(9pt, weight: "bold", fill: rgb("0369a1"))[1. Empathize]],
-  block(fill: rgb("fef3c7"), inset: 8pt, radius: 4pt, width: 100%)[#text(9pt, weight: "bold", fill: rgb("b45309"))[2. Define]],
-  block(fill: rgb("dcfce7"), inset: 8pt, radius: 4pt, width: 100%)[#text(9pt, weight: "bold", fill: rgb("15803d"))[3. Ideate]],
-  block(fill: rgb("f3e8ff"), inset: 8pt, radius: 4pt, width: 100%)[#text(9pt, weight: "bold", fill: rgb("6b21a8"))[4. Prototype]],
-  block(fill: rgb("fee2e2"), inset: 8pt, radius: 4pt, width: 100%)[#text(9pt, weight: "bold", fill: rgb("991b1b"))[5. Test]]
-)
+#align(center)[
+  #text(10pt, weight: "bold", fill: primary-color)[
+    1. Empathize #sym.arrow.r 2. Define #sym.arrow.r 3. Ideate #sym.arrow.r 4. Prototype #sym.arrow.r 5. Test
+  ]
+]
 
 #v(1em)
 
-#block(fill: rgb("f8fafc"), stroke: 0.5pt + gray, inset: 10pt, radius: 4pt)[
-  *1. Empathize:* Understand the people one is designing for by setting aside assumptions.
-  - _Goal:_ Discover genuine human needs, frustrations, and motivations.
-  - _Actions:_ Conduct user interviews, observe behaviors in their natural environment.
-  
-  *2. Define:* Synthesize research to establish a core problem statement.
-  - _Goal:_ Frame the problem in a human-centric way, keeping user needs at the center.
-  - _Actions:_ Create user personas, craft "How Might We" (HMW) statements.
-  
-  *3. Ideate:* Challenge assumptions and explore wide possibilities.
-  - _Goal:_ Generate diverse, creative solutions before narrowing down.
-  - _Actions:_ Run brainstorming sessions, mind mapping, and SCAMPER.
-  
-  *4. Prototype:* Turn best ideas into tangible, low-cost representations.
-  - _Goal:_ Build to think. Prototypes expose flaws early.
-  - _Actions:_ Create cardboard models, storyboards, CAD models, and assemblies.
-  
-  *5. Test:* Put prototypes in front of real users to evaluate.
-  - _Goal:_ Validate solutions, gather actionable feedback, and iterate.
-  - _Actions:_ Conduct usability tests, performance tests, and failure mode analysis.
-]
+*1. Empathize:* Understand the people one is designing for by setting aside assumptions.
+- _Goal:_ Discover genuine human needs, frustrations, and motivations.
+- _Actions:_ Conduct user interviews, observe behaviors in their natural environment.
+
+*2. Define:* Synthesize research to establish a core problem statement.
+- _Goal:_ Frame the problem in a human-centric way, keeping user needs at the center.
+- _Actions:_ Create user personas, craft "How Might We" (HMW) statements.
+
+*3. Ideate:* Challenge assumptions and explore wide possibilities.
+- _Goal:_ Generate diverse, creative solutions before narrowing down.
+- _Actions:_ Run brainstorming sessions, mind mapping, and SCAMPER.
+
+*4. Prototype:* Turn best ideas into tangible, low-cost representations.
+- _Goal:_ Build to think. Prototypes expose flaws early.
+- _Actions:_ Create cardboard models, storyboards, CAD models, and assemblies.
+
+*5. Test:* Put prototypes in front of real users to evaluate.
+- _Goal:_ Validate solutions, gather actionable feedback, and iterate.
+- _Actions:_ Conduct usability tests, performance tests, and failure mode analysis.
 
 // Include week files
 #pagebreak(weak: true)

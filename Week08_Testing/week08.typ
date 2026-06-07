@@ -1,4 +1,4 @@
-#import "../template.typ": section, sub-section, week-title
+#import "../template.typ": section, sub-section, primary-color, secondary-color, week-title
 #import "@preview/cetz:0.5.2"
 
 #week-title("Week 08", "Testing Phase – Usability & Performance", "Testing")
@@ -85,11 +85,11 @@
       )
       // draw line
       for i in range(0, fixed-points.len() - 1) {
-        line(fixed-points.at(i), fixed-points.at(i+1), stroke: 1.5pt + gray.darken(20%))
+        line(fixed-points.at(i), fixed-points.at(i+1), stroke: (paint: secondary-color.lighten(30%), dash: "dashed"))
       }
       // Draw points
       for pt in fixed-points {
-        circle(pt, radius: 0.04, fill: gray.darken(20%), stroke: none)
+        circle(pt, radius: 0.04, fill: secondary-color.lighten(30%), stroke: none)
       }
       
       // Curve 2: Helio-Track S1 (Dual-Axis Tracking)
@@ -99,20 +99,20 @@
       )
       // draw line
       for i in range(0, tracking-points.len() - 1) {
-        line(tracking-points.at(i), tracking-points.at(i+1), stroke: 2pt + rgb("d97706"))
+        line(tracking-points.at(i), tracking-points.at(i+1), stroke: 2pt + primary-color)
       }
       // Draw points
       for pt in tracking-points {
-        circle(pt, radius: 0.05, fill: rgb("d97706"), stroke: none)
+        circle(pt, radius: 0.05, fill: primary-color, stroke: none)
       }
       
       // Draw Legend
-      rect((3.6, 0.3), (5.9, 1.2), fill: rgb("ffffff").lighten(90%), stroke: 0.5pt + gray)
+      rect((3.6, 0.3), (5.9, 1.2), fill: white, stroke: 0.5pt + gray)
       // Legend entry 1: Fixed
-      line((3.8, 0.9), (4.3, 0.9), stroke: 1.5pt + gray.darken(20%))
+      line((3.8, 0.9), (4.3, 0.9), stroke: (paint: secondary-color.lighten(30%), dash: "dashed"))
       content((4.45, 0.9), text(7pt)[Fixed Panel (Baseline)], anchor: "west")
       // Legend entry 2: Tracking
-      line((3.8, 0.6), (4.3, 0.6), stroke: 2pt + rgb("d97706"))
+      line((3.8, 0.6), (4.3, 0.6), stroke: 2pt + primary-color)
       content((4.45, 0.6), text(7pt)[Helio-Track S1 (Dual-Axis)], anchor: "west")
     })
   ]
@@ -125,7 +125,6 @@
       columns: (1.5fr, 1.5fr, 1fr, 2fr),
       inset: 5pt,
       align: (left, left, left, left),
-      fill: (x, y) => if y == 0 { rgb("e2e8f0") } else { none },
       [*Failure Mode*], [*Root Cause*], [*Impact*], [*Mitigation Strategy*],
       [Servo Jitter], [Noisy LDR signals + low threshold.], [High gear wear.], [Add software hysteresis & time delays.],
       [Panel Flexing], [Panel holder too thin (2mm).], [Wobbles in wind.], [Increase plate to 4mm with ribs.],

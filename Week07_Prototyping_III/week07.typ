@@ -34,7 +34,6 @@
       columns: (1.2fr, 2.3fr, 2.5fr),
       inset: 6pt,
       align: (left, left, left),
-      fill: (x, y) => if y == 0 { rgb("e2e8f0") } else { none },
       [*Date*], [*Activity*], [*Observations & Solutions*],
       [Oct 10], [Print Base Plate & Pillar], [The pillar base warped slightly. *Fix:* Re-leveled bed and added a brim.],
       [Oct 12], [Print Panel Holder (PETG)], [PETG showed high stringing. *Fix:* Retraction increased to 6mm at 45mm/s.],

@@ -28,13 +28,13 @@
       columns: (2fr, 1.2fr, 1.8fr, 1.8fr, 1.8fr),
       inset: 6pt,
       align: (left, center, center, center, center),
-      fill: (x, y) => if y == 0 { rgb("e2e8f0") } else if y == 6 { rgb("f1f5f9") } else { none },
       [*Criteria*], [*Weight*], [*Design 1: Direct Servo*], [*Design 2: Gear-Reduced*], [*Design 3: Actuators*],
       [Stability], [4], [3 (12)], [5 (20)], [4 (16)],
       [Cost], [3], [5 (15)], [3 (9)], [2 (6)],
       [Ease of Build], [3], [5 (15)], [2 (6)], [3 (9)],
       [Tracking Range], [2], [4 (8)], [5 (10)], [2 (4)],
       [Maintenance], [2], [4 (8)], [3 (6)], [2 (4)],
+      table.hline(stroke: 0.75pt + black),
       [*TOTAL SCORE*], [14], [*61*], [57], [39]
     )
   ]
@@ -65,6 +65,7 @@
       [5], [PLA/PETG Filament (printed parts, ~400g)], [1 roll], [850.00], [850.00],
       [6], [M3 Socket-Head Screw Set & Nuts], [1 set], [150.00], [150.00],
       [7], [Miniature Ball Thrust Bearing (F8-16M)], [1], [180.00], [180.00],
+      table.hline(stroke: 0.75pt + black),
       [*Total*], [*Estimated Material Cost*], [*11*], [*-*], [*INR 2,550.00*]
     )
   ]

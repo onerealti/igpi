@@ -31,7 +31,6 @@
       columns: (1.5fr, 2.5fr, 1.2fr, 1fr, 1fr),
       inset: 6pt,
       align: (left, left, center, center, center),
-      fill: (x, y) => if y == 0 { rgb("e2e8f0") } else { none },
       [*Configuration*], [*Description*], [*Efficiency Gain*], [*Complexity*], [*Cost*],
       [Fixed Mount], [Set static tilt based on latitude], [Baseline (0%)], [Low], [Low],
       [Single-Axis], [Tracks daily East-West motion (Azimuth)], [20% - 25%], [Moderate], [Moderate],

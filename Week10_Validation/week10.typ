@@ -1,4 +1,4 @@
-#import "../template.typ": section, sub-section, formula-block, week-title
+#import "../template.typ": section, sub-section, formula-block, primary-color, secondary-color, week-title
 #import "@preview/cetz:0.5.2"
 
 #week-title("Week 10", "Engineering Validation", "Validation")
@@ -26,25 +26,25 @@
       import cetz.draw: *
       
       // Draw base
-      rect((-1.5, 0.0), (1.5, 0.4), fill: rgb("e2e8f0"), stroke: 1pt + black)
+      rect((-1.5, 0.0), (1.5, 0.4), fill: secondary-color.lighten(90%), stroke: 1pt + black)
       content((0.0, 0.2), [Base Box])
       
       // Draw pillar
-      rect((-0.2, 0.4), (0.2, 2.5), fill: rgb("cbd5e1"), stroke: 1pt + black)
+      rect((-0.2, 0.4), (0.2, 2.5), fill: secondary-color.lighten(80%), stroke: 1pt + black)
       content((0.0, 1.45), text(10pt)[Pillar], angle: 90deg)
       
       // Draw elevation pivot point
-      circle((0.0, 2.5), radius: 0.15, fill: rgb("1f3b68"))
+      circle((0.0, 2.5), radius: 0.15, fill: primary-color)
       
       // Draw tilted panel holder
-      line((-1.0, 1.9), (1.0, 3.1), stroke: 3pt + rgb("1f3b68"))
+      line((-1.0, 1.9), (1.0, 3.1), stroke: 3pt + primary-color)
       content((0.4, 3.0), text(10pt)[Solar Panel], angle: 30deg)
       
       // Draw normal vector sun rays
-      line((0.8, 3.7), (0.3, 2.8), stroke: (paint: orange, dash: "dashed"), mark: (end: ">"))
-      line((0.2, 3.4), (-0.3, 2.5), stroke: (paint: orange, dash: "dashed"), mark: (end: ">"))
-      line((-0.4, 3.0), (-0.9, 2.1), stroke: (paint: orange, dash: "dashed"), mark: (end: ">"))
-      content((0.5, 3.8), [Sun Rays], fill: white)
+      line((0.8, 3.7), (0.3, 2.8), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
+      line((0.2, 3.4), (-0.3, 2.5), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
+      line((-0.4, 3.0), (-0.9, 2.1), stroke: (paint: secondary-color, dash: "dashed"), mark: (end: ">"))
+      content((0.5, 3.8), [Sun Rays])
     })
   ]
   #v(0.5em)

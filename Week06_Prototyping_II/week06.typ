@@ -36,7 +36,6 @@
       columns: (1.5fr, 3fr, 1.2fr),
       inset: 6pt,
       align: (left, left, center),
-      fill: (x, y) => if y == 0 { rgb("e2e8f0") } else { none },
       [*Part Name*], [*Function*], [*Material*],
       [Base Plate], [Houses Azimuth servo, circuit boards, and battery weight.], [PLA],
       [Main Pillar], [Vertical column; routes cables internally and holds Elevation servo.], [PLA],
