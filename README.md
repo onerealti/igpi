@@ -29,19 +29,19 @@ This is to certify that **[Your Name]** of **B.E – IV Semester** of the **Mech
 
 | Week | Topic / Lab Exercise | Lab Document | Status |
 | :---: | :--- | :---: | :---: |
-| **1** | Introduction to Design Thinking & Solar Efficiency Research | [Week 01 README](file:///C:/Users/User/Desktop/agy/lab_record/Week01_Intro/README.md) | Completed |
-| **2** | Define Phase – POV & Problem Statement | [Week 02 README](file:///C:/Users/User/Desktop/agy/lab_record/Week02_Define/README.md) | Completed |
-| **3** | Ideation Techniques I — Brainstorming & SCAMPER | [Week 03 README](file:///C:/Users/User/Desktop/agy/lab_record/Week03_Ideation_I/README.md) | Completed |
-| **4** | Ideation Techniques II — Concept Evaluation & Selection | [Week 04 README](file:///C:/Users/User/Desktop/agy/lab_record/Week04_Ideation_II/README.md) | Completed |
-| **5** | Prototyping I – Low-Fidelity Prototyping & Storyboarding | [Week 05 README](file:///C:/Users/User/Desktop/agy/lab_record/Week05_Prototyping_I/README.md) | Completed |
-| **6** | Prototyping II – CAD Modeling & Assembly | [Week 06 README](file:///C:/Users/User/Desktop/agy/lab_record/Week06_Prototyping_II/README.md) | Completed |
-| **7** | Prototyping III – 3D Printing & Fabrication Log | [Week 07 README](file:///C:/Users/User/Desktop/agy/lab_record/Week07_Prototyping_III/README.md) | Completed |
-| **8** | Testing Phase — Performance Testing & Failure Analysis | [Week 08 README](file:///C:/Users/User/Desktop/agy/lab_record/Week08_Testing/README.md) | Completed |
-| **9** | Iteration & Redesign — Design Optimizations | [Week 09 README](file:///C:/Users/User/Desktop/agy/lab_record/Week09_Iteration/README.md) | Completed |
-| **10** | Engineering Validation — Calculations & Stress Analysis | [Week 10 README](file:///C:/Users/User/Desktop/agy/lab_record/Week10_Validation/README.md) | Completed |
-| **11** | Communication & Documentation — Report & User Manual | [Week 11 README](file:///C:/Users/User/Desktop/agy/lab_record/Week11_Communication/README.md) | Completed |
-| **12** | Pitching and Final Preparation — Slide Deck & Q&A Prep | [Week 12 README](file:///C:/Users/User/Desktop/agy/lab_record/Week12_Pitching/README.md) | Completed |
-| **13** | Final Presentation & Demo Day — Showcase & Reflection | [Week 13 README](file:///C:/Users/User/Desktop/agy/lab_record/Week13_Final/README.md) | Completed |
+| **1** | Introduction to Design Thinking & Solar Efficiency Research | [Week 01 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week01_Intro/week01.typ) | Completed |
+| **2** | Define Phase – POV & Problem Statement | [Week 02 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week02_Define/week02.typ) | Completed |
+| **3** | Ideation Techniques I — Brainstorming & SCAMPER | [Week 03 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week03_Ideation_I/week03.typ) | Completed |
+| **4** | Ideation Techniques II — Concept Evaluation & Selection | [Week 04 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week04_Ideation_II/week04.typ) | Completed |
+| **5** | Prototyping I – Low-Fidelity Prototyping & Storyboarding | [Week 05 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week05_Prototyping_I/week05.typ) | Completed |
+| **6** | Prototyping II – CAD Modeling & Assembly | [Week 06 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week06_Prototyping_II/week06.typ) | Completed |
+| **7** | Prototyping III – 3D Printing & Fabrication Log | [Week 07 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week07_Prototyping_III/week07.typ) | Completed |
+| **8** | Testing Phase — Performance Testing & Failure Analysis | [Week 08 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week08_Testing/week08.typ) | Completed |
+| **9** | Iteration & Redesign — Design Optimizations | [Week 09 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week09_Iteration/week09.typ) | Completed |
+| **10** | Engineering Validation — Calculations & Stress Analysis | [Week 10 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week10_Validation/week10.typ) | Completed |
+| **11** | Communication & Documentation — Report & User Manual | [Week 11 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week11_Communication/week11.typ) | Completed |
+| **12** | Pitching and Final Preparation — Slide Deck & Q&A Prep | [Week 12 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week12_Pitching/week12.typ) | Completed |
+| **13** | Final Presentation & Demo Day — Showcase & Reflection | [Week 13 Source](file:///C:/Users/User/Desktop/agy/lab_record/Week13_Final/week13.typ) | Completed |
 
 ---
 

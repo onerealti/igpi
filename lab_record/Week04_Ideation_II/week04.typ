@@ -1,4 +1,4 @@
-#import "../../template.typ": section, sub-section
+#import "../template.typ": section, sub-section
 
 = Week 04: Ideation Techniques II – Concept Selection
 

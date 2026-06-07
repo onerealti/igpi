@@ -1,4 +1,4 @@
-#import "../../template.typ": section, sub-section
+#import "../template.typ": section, sub-section
 
 = Week 11: Communication & Documentation
 

@@ -1,4 +1,4 @@
-#import "../../template.typ": section, sub-section
+#import "../template.typ": section, sub-section
 #import "@preview/cetz:0.5.2"
 
 = Week 10: Engineering Validation

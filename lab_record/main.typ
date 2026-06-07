@@ -161,28 +161,29 @@ Design thinking is a human-centered, iterative problem-solving framework. It con
 
 // Include week files
 #pagebreak(weak: true)
-#include "lab_record/Week01_Intro/week01.typ"
+#include "Week01_Intro/week01.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week02_Define/week02.typ"
+#include "Week02_Define/week02.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week03_Ideation_I/week03.typ"
+#include "Week03_Ideation_I/week03.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week04_Ideation_II/week04.typ"
+#include "Week04_Ideation_II/week04.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week05_Prototyping_I/week05.typ"
+#include "Week05_Prototyping_I/week05.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week06_Prototyping_II/week06.typ"
+#include "Week06_Prototyping_II/week06.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week07_Prototyping_III/week07.typ"
+#include "Week07_Prototyping_III/week07.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week08_Testing/week08.typ"
+#include "Week08_Testing/week08.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week09_Iteration/week09.typ"
+#include "Week09_Iteration/week09.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week10_Validation/week10.typ"
+#include "Week10_Validation/week10.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week11_Communication/week11.typ"
+#include "Week11_Communication/week11.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week12_Pitching/week12.typ"
+#include "Week12_Pitching/week12.typ"
 #pagebreak(weak: true)
-#include "lab_record/Week13_Final/week13.typ"
+#include "Week13_Final/week13.typ"
+
