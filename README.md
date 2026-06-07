@@ -4,9 +4,9 @@
 [![Hardware](https://img.shields.io/badge/Hardware-Arduino%20Nano-informational?logo=arduino&logoColor=white)](https://arduino.cc)
 [![Mechanical](https://img.shields.io/badge/CAD-SolidWorks-brightgreen)](https://www.solidworks.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Affiliation](https://img.shields.io/badge/College-MCET-red)](https://mjcollege.ac.in)
+[![Affiliation](https://img.shields.io/badge/College-MJCET-red)](https://mjcollege.ac.in)
 
-This repository contains the complete laboratory record and design documentation for **Helio-Track S1**, an affordable, 3D-printable dual-axis solar tracking system. Developed as part of the **Idea Generation and Product Innovation Lab (PC453ME)** in the Department of Mechanical Engineering at **Muffakham College of Engineering and Technology (MCET)**.
+This repository contains the complete laboratory record and design documentation for **Helio-Track S1**, an affordable, 3D-printable dual-axis solar tracking system. Developed as part of the **Idea Generation and Product Innovation Lab (PC453ME)** in the Department of Mechanical Engineering at **Muffakham College of Engineering and Technology (MJCET)**.
 
 The entire report is typeset programmatically using [Typst](https://typst.app), utilizing [Fletcher](https://github.com/fennecdextra/fletcher) for system flowcharts and [CeTZ](https://github.com/johannes-mueller/cetz) for vector-drawn engineering schematics.
 
@@ -149,4 +149,4 @@ Navigate to the root directory `lab_record` in your terminal and run:
 * **Name:** Murtaza Ahmed
 * **Roll Number:** `1607-24-736-017`
 * **Department:** Department of Mechanical Engineering
-* **College:** Muffakham College of Engineering and Technology (MCET)
+* **College:** Muffakham College of Engineering and Technology (MJCET)
