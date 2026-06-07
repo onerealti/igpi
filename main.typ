@@ -4,7 +4,7 @@
 
 #set page(
   paper: "a4",
-  margin: (x: 2.5cm, y: 2.5cm),
+  margin: (left: 3.2cm, right: 2.5cm, top: 2.5cm, bottom: 2.5cm),
   header: context {
     let page-num = counter(page).get().first()
     if page-num > 3 {
@@ -108,14 +108,14 @@
 // ==========================================
 // COVER PAGE
 // ==========================================
-#place(top + left, dx: -1.5cm, dy: -1.5cm,
+#place(top + left, dx: -2.2cm, dy: -1.5cm,
   rect(
     width: 19.0cm,
     height: 27.7cm,
     stroke: 1.5pt + primary-color
   )
 )
-#place(top + left, dx: -1.3cm, dy: -1.3cm,
+#place(top + left, dx: -2.0cm, dy: -1.3cm,
   rect(
     width: 18.6cm,
     height: 27.3cm,
@@ -178,14 +178,14 @@
 // CERTIFICATE PAGE
 // ==========================================
 #pagebreak()
-#place(top + left, dx: -1.5cm, dy: -1.5cm,
+#place(top + left, dx: -2.2cm, dy: -1.5cm,
   rect(
     width: 19.0cm,
     height: 27.7cm,
     stroke: 1.5pt + primary-color
   )
 )
-#place(top + left, dx: -1.3cm, dy: -1.3cm,
+#place(top + left, dx: -2.0cm, dy: -1.3cm,
   rect(
     width: 18.6cm,
     height: 27.3cm,
@@ -307,11 +307,8 @@ Design thinking is a human-centered, iterative problem-solving framework. It con
 // REFERENCES
 // ==========================================
 #pagebreak()
-#v(1cm)
-#align(center)[
-  #text(18pt, weight: "bold", fill: primary-color)[REFERENCES / BIBLIOGRAPHY]
-]
-#v(1cm)
+= References & Bibliography
+
 
 #set list(indent: 15pt)
 #text(size: 10pt)[
