@@ -25,7 +25,7 @@
   - *Power Consumption:*
     - _Idle (No motor movement):_ 45mA @ 5V (0.225W).
     - _Active (Both servos moving):_ 450mA @ 5V (2.25W).
-    - _Net Gain:* Tested with a 20W panel. Daily generation increased by 32% (an average gain of 6.4W), while average motor draw was under 0.5W. *Net energy gain is positive.*
+    - _Net Gain:_ Tested with a 20W panel. Daily generation increased by 32% (an average gain of 6.4W), while average motor draw was under 0.5W. *Net energy gain is positive.*
 
   === 2. Power Generation Performance Chart
   The graph below compares the measured power output (Watts) of a static solar panel vs. the **Helio-Track S1** dual-axis tracker over a 12-hour test run (8:00 AM to 6:00 PM):
