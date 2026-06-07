@@ -50,11 +50,11 @@
   #v(0.5em)
 
   === 2. Elevation Motor Torque Verification
-  - *Assumptions:* Panel mass $m = 0.8 "kg"$, pivot-to-CG distance $r = 0.05 "m"$, gravity $g = 9.81 "m/s"^2$, safety factor $SF = 1.5$.
+  - *Assumptions:* Panel mass $m = 0.8 "kg"$, pivot-to-CG distance $r = 0.05 "m"$, gravity $g = 9.81 "m/s"^2$, safety factor $"SF" = 1.5$.
   - *Static Torque:*
     $ T_s = m times g times r = 0.8 times 9.81 times 0.05 = 0.3924 "Nm" approx 4.0 "kg-cm" $
   - *Required Torque:*
-    $ T_"required" = T_s times SF = 4.0 times 1.5 = 6.0 "kg-cm" $
+    $ T_"required" = T_s times "SF" = 4.0 times 1.5 = 6.0 "kg-cm" $
   - *Validation:* The MG995 servo provides $10.0 "kg-cm"$ stall torque at 4.8V. Since $10.0 > 6.0$, the servo is *sufficient*.
 
   === 3. Compressive Stress on Central Shaft
