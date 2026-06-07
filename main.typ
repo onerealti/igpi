@@ -37,7 +37,7 @@
 )
 
 #set text(
-  font: ("Liberation Sans", "Arial", "sans-serif"),
+  font: "Arial",
   size: 10.5pt,
   fill: rgb("1f2937"),
   spacing: 120%
