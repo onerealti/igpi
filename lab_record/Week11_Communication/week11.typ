@@ -41,7 +41,7 @@
 
   === 4. Pitch Script: "The Helio-Track S1"
   - *The Problem:* Fixed panels lose up to 40% of potential solar energy because they only align with the sun at noon. For off-grid users, this means buying extra, expensive panels.
-  - *The Solution:* The Helio-Track S1 is a 3D-printable, low-cost ($50) dual-axis tracking mount that automatically tracks the sun.
+  - *The Solution:* The Helio-Track S1 is a 3D-printable, low-cost (\$50) dual-axis tracking mount that automatically tracks the sun.
   - *The Value:* Boosts daily energy generation by over 30%, uses common, easily sourced components that can be printed and repaired anywhere, and automatically sleeps at night to save power.
   - *Closing:* *"Why settle for 60% of your power when you can have 100%? The Helio-Track S1: Making every ray count."*
 ]

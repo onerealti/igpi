@@ -41,7 +41,7 @@
   _Note: Weighted scores are shown in parentheses. Total = Sum(Weight $times$ Rating 1-5)._
 
   === 2. Feasibility vs. Innovation Analysis
-  - *High Feasibility / High Innovation (Selected):* Design 1. Direct drive from MG995 servos provides ample torque (10kg-cm) for a 10W-20W panel, keeping the build simple, low-cost ($<$\$50), and easy to 3D print.
+  - *High Feasibility / High Innovation (Selected):* Design 1. Direct drive from MG995 servos provides ample torque (10kg-cm) for a 10W-20W panel, keeping the build simple, low-cost (< \$50), and easy to 3D print.
   - *Low Feasibility / High Innovation:* Design 3. Linear actuators are heavy, expensive, and introduce massive complexity for a small-scale prototype.
   - *High Feasibility / Low Innovation:* Simple manual bracket adjustments.
 

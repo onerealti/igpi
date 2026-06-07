@@ -29,7 +29,7 @@
   7. *Testing Results:* Comparative charts of power generation showing a 32% net efficiency boost.
   8. *Iterations & Redesign:* Mechanical pivots and software hysteresis algorithms.
   9. *Engineering Validation:* Motor torque calculations and PLA stress validation.
-  10. *Summary & Cost:* Final bill of materials ($43.50 total cost) and project reflections.
+  10. *Summary & Cost:* Final bill of materials (\$43.50 total cost) and project reflections.
 
   === 2. Mock Presentation Q&A Defense
   We anticipated examiner questions and drafted engineering answers:
