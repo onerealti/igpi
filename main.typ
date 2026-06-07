@@ -94,10 +94,8 @@
 #show raw.where(block: true): it => {
   block(
     width: 100%,
-    fill: rgb("f8fafc"),
-    stroke: (left: 3pt + primary-color, rest: 0.5pt + rgb("cbd5e1")),
-    inset: (x: 12pt, y: 10pt),
-    radius: (right: 4pt),
+    stroke: 0.5pt + black,
+    inset: (x: 10pt, y: 8pt),
     [
       #set text(font: "Consolas", size: 8.5pt)
       #it
