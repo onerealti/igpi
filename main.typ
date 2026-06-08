@@ -1,5 +1,6 @@
 #import "template.typ": primary-color, secondary-color
 
+
 #set document(title: "Idea Generation and Product Innovation Lab Record", author: "Murtaza Ahmed")
 
 #set page(
@@ -126,10 +127,12 @@
 )
 
 #align(center)[
-  #v(0.8cm)
-  #text(18pt, weight: "bold", fill: primary-color)[MUFFAKHAM COLLEGE OF ENGINEERING AND TECHNOLOGY] \
-  #text(10pt, weight: "bold", fill: secondary-color)[(Affiliated to Osmania University & Approved by AICTE)] \
-  #text(11pt, weight: "medium", fill: secondary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
+#v(0.4cm)
+#image("Logo.png", width: 5cm)
+#v(0.2cm)
+#text(18pt, weight: "bold", fill: primary-color)[MUFFAKHAM COLLEGE OF ENGINEERING AND TECHNOLOGY] \
+#text(10pt, weight: "bold", fill: secondary-color)[(Affiliated to Osmania University & Approved by AICTE)] \
+#text(11pt, weight: "medium", fill: secondary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
   
   #v(2.2cm)
   #rect(
@@ -150,7 +153,7 @@
   #text(13pt, weight: "bold", fill: primary-color)[Project: Helio-Track S1] \
   #text(11pt, style: "italic", fill: secondary-color)[Dual-Axis Solar Tracking System]
   
-  #v(2.8cm)
+  #v(0.5cm)
   #block(
     width: 85%,
     stroke: 0.75pt + gray.lighten(40%),
@@ -170,7 +173,7 @@
     )
   ]
   
-  #v(2.6cm)
+  #v(0.5cm)
   #line(length: 40%, stroke: 1.5pt + primary-color)
   #v(0.4cm)
   #text(9pt, style: "italic", fill: gray.darken(30%))[Submitted in partial fulfillment of the requirements for the degree of Bachelor of Engineering in Mechanical Engineering]
@@ -197,7 +200,7 @@
 
 #v(0.5cm)
 #align(center)[
-  #text(18pt, weight: "bold", fill: primary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
+  #text(16pt, weight: "bold", fill: primary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
   #text(11pt, weight: "bold", fill: secondary-color)[MUFFAKHAM COLLEGE OF ENGINEERING & TECHNOLOGY] \
   #v(1cm)
   #text(15pt, weight: "bold", fill: primary-color)[CERTIFICATE] \
