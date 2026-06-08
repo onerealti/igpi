@@ -130,7 +130,7 @@
 #v(0.4cm)
 #image("Logo.png", width: 5cm)
 #v(0.2cm)
-#text(18pt, weight: "bold", fill: primary-color)[MUFFAKHAM COLLEGE OF ENGINEERING AND TECHNOLOGY] \
+#text(17pt, weight: "bold", fill: primary-color)[MUFFAKHAM JAH COLLEGE OF ENGINEERING AND TECHNOLOGY] \
 #text(10pt, weight: "bold", fill: secondary-color)[(Affiliated to Osmania University & Approved by AICTE)] \
 #text(11pt, weight: "medium", fill: secondary-color)[DEPARTMENT OF MECHANICAL ENGINEERING] \
   
@@ -143,7 +143,7 @@
     fill: primary-color.lighten(95%)
   )[
     #align(center)[
-      #text(15pt, weight: "bold", fill: primary-color)[IDEA GENERATION AND PRODUCT INNOVATION\ LABORATORY RECORD] \
+      #text(14pt, weight: "bold", fill: primary-color)[IDEA GENERATION AND PRODUCT INNOVATION\ LABORATORY RECORD] \
       #v(0.5em)
       #text(11pt, weight: "bold", fill: secondary-color)[Course Code: PC453ME]
     ]

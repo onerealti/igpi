@@ -40,7 +40,7 @@
 
   === 3. Targeted Design Goals
   - *Accuracy:* Hold panel within #box([$\pm 5$ degrees]) of solar perpendicularity.
-  - *Reliability:* Support $\ge 1,000$ continuous operation cycles without mechanical fatigue.
+  - *Reliability:* Support $ >=  1,000$ continuous operation cycles without mechanical fatigue.
   - *Efficiency:* Idle power draw under 5% of panel generation (via sleep state implementation).
 ]
 
